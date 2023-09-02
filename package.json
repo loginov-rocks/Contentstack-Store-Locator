@@ -1,0 +1,36 @@
+{
+  "name": "contentstack-store-locator",
+  "version": "0.1.0",
+  "description": "Contentstack Store Locator",
+  "engines": {
+    "node": "20",
+    "npm": "9"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loginov-rocks/contentstack-store-locator.git"
+  },
+  "author": "Danila Loginov <danila@loginov.rocks> (https://loginov.rocks)",
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/loginov-rocks/contentstack-store-locator/issues"
+  },
+  "dependencies": {
+    "@types/node": "20.5.8",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.2.2"
+  }
+}
