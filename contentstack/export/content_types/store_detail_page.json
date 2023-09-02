@@ -1,0 +1,449 @@
+{
+  "title": "Store Detail Page",
+  "uid": "store_detail_page",
+  "schema": [
+    {
+      "data_type": "text",
+      "display_name": "Title",
+      "field_metadata": {
+        "_default": true,
+        "version": 3
+      },
+      "mandatory": true,
+      "uid": "title",
+      "unique": true,
+      "multiple": false,
+      "non_localizable": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "URL",
+      "uid": "url",
+      "field_metadata": {
+        "_default": true,
+        "version": 3
+      },
+      "multiple": false,
+      "unique": false,
+      "mandatory": false,
+      "non_localizable": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "Address",
+      "uid": "address",
+      "field_metadata": {
+        "description": "",
+        "default_value": "",
+        "multiline": true,
+        "placeholder": "",
+        "version": 3
+      },
+      "format": "",
+      "error_messages": {
+        "format": ""
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "Primary Phone",
+      "uid": "primary_phone",
+      "field_metadata": {
+        "description": "",
+        "default_value": "",
+        "version": 3
+      },
+      "format": "",
+      "error_messages": {
+        "format": ""
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "group",
+      "display_name": "Coordinates",
+      "field_metadata": {
+        "description": "",
+        "instruction": ""
+      },
+      "schema": [
+        {
+          "data_type": "text",
+          "display_name": "Latitude",
+          "uid": "latitude",
+          "field_metadata": {
+            "description": "",
+            "default_value": "",
+            "instruction": "from –90° to +90°",
+            "version": 3
+          },
+          "format": "^(\\+|-)?(?:90(?:(?:\\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\\.[0-9]{1,6})?))$",
+          "error_messages": {
+            "format": "Invalid value"
+          },
+          "mandatory": true,
+          "multiple": false,
+          "non_localizable": true,
+          "unique": false
+        },
+        {
+          "data_type": "text",
+          "display_name": "Longitude",
+          "uid": "longitude",
+          "field_metadata": {
+            "description": "",
+            "default_value": "",
+            "instruction": "from –180° to +180°",
+            "version": 3
+          },
+          "format": "^(\\+|-)?(?:180(?:(?:\\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\\.[0-9]{1,6})?))$",
+          "error_messages": {
+            "format": "Invalid value"
+          },
+          "mandatory": true,
+          "multiple": false,
+          "non_localizable": true,
+          "unique": false
+        }
+      ],
+      "uid": "coordinates",
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": true,
+      "unique": false
+    },
+    {
+      "display_name": "Brand Color",
+      "extension_uid": "blte79c6f185a2654ee",
+      "field_metadata": {
+        "extension": true
+      },
+      "uid": "brand_color",
+      "mandatory": false,
+      "non_localizable": true,
+      "unique": false,
+      "config": {},
+      "data_type": "text",
+      "multiple": false
+    },
+    {
+      "data_type": "blocks",
+      "display_name": "Blocks",
+      "blocks": [
+        {
+          "title": "About",
+          "uid": "about",
+          "schema": [
+            {
+              "data_type": "json",
+              "display_name": "About",
+              "uid": "about",
+              "field_metadata": {
+                "allow_json_rte": true,
+                "embed_entry": false,
+                "description": "",
+                "default_value": "",
+                "multiline": false,
+                "rich_text_type": "basic",
+                "options": []
+              },
+              "format": "",
+              "error_messages": {
+                "format": ""
+              },
+              "reference_to": [
+                "sys_assets"
+              ],
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false,
+              "mandatory": true
+            }
+          ]
+        },
+        {
+          "title": "Facilities",
+          "uid": "facilities",
+          "schema": [
+            {
+              "data_type": "text",
+              "display_name": "Facilities",
+              "uid": "facilities",
+              "field_metadata": {
+                "description": "",
+                "default_value": "",
+                "version": 3
+              },
+              "format": "",
+              "error_messages": {
+                "format": ""
+              },
+              "mandatory": true,
+              "multiple": true,
+              "non_localizable": false,
+              "unique": false
+            }
+          ]
+        },
+        {
+          "title": "Hours",
+          "uid": "hours",
+          "schema": [
+            {
+              "data_type": "group",
+              "display_name": "Days",
+              "field_metadata": {
+                "description": "",
+                "instruction": ""
+              },
+              "schema": [
+                {
+                  "data_type": "text",
+                  "display_name": "Day",
+                  "uid": "day",
+                  "field_metadata": {
+                    "description": "",
+                    "default_value": "",
+                    "instruction": "Monday or Mon-Sat",
+                    "placeholder": "",
+                    "isTitle": true,
+                    "version": 3
+                  },
+                  "format": "",
+                  "error_messages": {
+                    "format": ""
+                  },
+                  "mandatory": true,
+                  "multiple": false,
+                  "non_localizable": false,
+                  "unique": false
+                },
+                {
+                  "data_type": "text",
+                  "display_name": "Start Time",
+                  "uid": "start_time",
+                  "field_metadata": {
+                    "description": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "instruction": "08:00 or 8 am",
+                    "version": 3
+                  },
+                  "format": "",
+                  "error_messages": {
+                    "format": ""
+                  },
+                  "mandatory": true,
+                  "multiple": false,
+                  "non_localizable": false,
+                  "unique": false
+                },
+                {
+                  "data_type": "text",
+                  "display_name": "End Time",
+                  "uid": "end_time",
+                  "field_metadata": {
+                    "description": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "instruction": "22:00 or 10 pm",
+                    "version": 3
+                  },
+                  "format": "",
+                  "error_messages": {
+                    "format": ""
+                  },
+                  "mandatory": false,
+                  "multiple": false,
+                  "non_localizable": false,
+                  "unique": false
+                }
+              ],
+              "uid": "days",
+              "mandatory": false,
+              "multiple": true,
+              "non_localizable": false,
+              "unique": false
+            },
+            {
+              "data_type": "text",
+              "display_name": "Notice",
+              "uid": "notice",
+              "field_metadata": {
+                "description": "",
+                "default_value": "",
+                "version": 3
+              },
+              "format": "",
+              "error_messages": {
+                "format": ""
+              },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            }
+          ]
+        },
+        {
+          "title": "Networks",
+          "uid": "networks",
+          "schema": [
+            {
+              "data_type": "link",
+              "display_name": "Links",
+              "uid": "links",
+              "field_metadata": {
+                "description": "",
+                "default_value": {
+                  "title": "",
+                  "url": ""
+                }
+              },
+              "mandatory": true,
+              "multiple": true,
+              "non_localizable": false,
+              "unique": false
+            }
+          ]
+        }
+      ],
+      "multiple": true,
+      "uid": "blocks",
+      "field_metadata": {
+        "instruction": "",
+        "description": ""
+      },
+      "mandatory": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "global_field",
+      "display_name": "SEO",
+      "reference_to": "seo",
+      "field_metadata": {
+        "description": ""
+      },
+      "uid": "seo",
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false,
+      "schema": [
+        {
+          "data_type": "text",
+          "display_name": "Meta Title",
+          "uid": "meta_title",
+          "field_metadata": {
+            "description": "",
+            "default_value": "",
+            "version": 3
+          },
+          "format": "",
+          "error_messages": {
+            "format": ""
+          },
+          "multiple": false,
+          "mandatory": false,
+          "unique": false,
+          "non_localizable": false,
+          "indexed": false,
+          "inbuilt_model": false
+        },
+        {
+          "data_type": "text",
+          "display_name": "Meta Description",
+          "uid": "meta_description",
+          "field_metadata": {
+            "description": "",
+            "default_value": "",
+            "multiline": true,
+            "version": 3
+          },
+          "format": "",
+          "error_messages": {
+            "format": ""
+          },
+          "multiple": false,
+          "mandatory": false,
+          "unique": false,
+          "non_localizable": false,
+          "indexed": false,
+          "inbuilt_model": false
+        },
+        {
+          "data_type": "text",
+          "display_name": "Meta Keywords",
+          "uid": "meta_keywords",
+          "field_metadata": {
+            "description": "",
+            "default_value": "",
+            "version": 3
+          },
+          "format": "",
+          "error_messages": {
+            "format": ""
+          },
+          "multiple": false,
+          "mandatory": false,
+          "unique": false,
+          "non_localizable": false,
+          "indexed": false,
+          "inbuilt_model": false
+        },
+        {
+          "data_type": "boolean",
+          "display_name": "Enable Search Indexing",
+          "uid": "enable_search_indexing",
+          "field_metadata": {
+            "description": "",
+            "default_value": true
+          },
+          "multiple": false,
+          "mandatory": false,
+          "unique": false,
+          "non_localizable": false,
+          "indexed": false,
+          "inbuilt_model": false
+        },
+        {
+          "data_type": "text",
+          "display_name": "SEO Title",
+          "uid": "seo_title",
+          "field_metadata": {
+            "description": "",
+            "default_value": "",
+            "version": 3
+          },
+          "format": "",
+          "error_messages": {
+            "format": ""
+          },
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false,
+          "indexed": false,
+          "inbuilt_model": false
+        }
+      ]
+    }
+  ],
+  "description": "",
+  "options": {
+    "is_page": true,
+    "singleton": false,
+    "sub_title": [],
+    "title": "title",
+    "url_pattern": "/:title",
+    "url_prefix": "/"
+  }
+}

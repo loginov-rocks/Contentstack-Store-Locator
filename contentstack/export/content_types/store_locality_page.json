@@ -1,0 +1,168 @@
+{
+  "title": "Store Locality Page",
+  "uid": "store_locality_page",
+  "schema": [
+    {
+      "data_type": "text",
+      "display_name": "Title",
+      "field_metadata": {
+        "_default": true,
+        "version": 3
+      },
+      "mandatory": true,
+      "uid": "title",
+      "unique": true,
+      "multiple": false,
+      "non_localizable": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "URL",
+      "uid": "url",
+      "field_metadata": {
+        "_default": true,
+        "version": 3
+      },
+      "multiple": false,
+      "unique": false,
+      "mandatory": false,
+      "non_localizable": false
+    },
+    {
+      "data_type": "reference",
+      "display_name": "Stores",
+      "reference_to": [
+        "store_detail_page"
+      ],
+      "field_metadata": {
+        "ref_multiple": true,
+        "ref_multiple_content_types": true
+      },
+      "uid": "stores",
+      "mandatory": true,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "global_field",
+      "display_name": "SEO",
+      "reference_to": "seo",
+      "field_metadata": {
+        "description": ""
+      },
+      "uid": "seo",
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false,
+      "schema": [
+        {
+          "data_type": "text",
+          "display_name": "Meta Title",
+          "uid": "meta_title",
+          "field_metadata": {
+            "description": "",
+            "default_value": "",
+            "version": 3
+          },
+          "format": "",
+          "error_messages": {
+            "format": ""
+          },
+          "multiple": false,
+          "mandatory": false,
+          "unique": false,
+          "non_localizable": false,
+          "indexed": false,
+          "inbuilt_model": false
+        },
+        {
+          "data_type": "text",
+          "display_name": "Meta Description",
+          "uid": "meta_description",
+          "field_metadata": {
+            "description": "",
+            "default_value": "",
+            "multiline": true,
+            "version": 3
+          },
+          "format": "",
+          "error_messages": {
+            "format": ""
+          },
+          "multiple": false,
+          "mandatory": false,
+          "unique": false,
+          "non_localizable": false,
+          "indexed": false,
+          "inbuilt_model": false
+        },
+        {
+          "data_type": "text",
+          "display_name": "Meta Keywords",
+          "uid": "meta_keywords",
+          "field_metadata": {
+            "description": "",
+            "default_value": "",
+            "version": 3
+          },
+          "format": "",
+          "error_messages": {
+            "format": ""
+          },
+          "multiple": false,
+          "mandatory": false,
+          "unique": false,
+          "non_localizable": false,
+          "indexed": false,
+          "inbuilt_model": false
+        },
+        {
+          "data_type": "boolean",
+          "display_name": "Enable Search Indexing",
+          "uid": "enable_search_indexing",
+          "field_metadata": {
+            "description": "",
+            "default_value": true
+          },
+          "multiple": false,
+          "mandatory": false,
+          "unique": false,
+          "non_localizable": false,
+          "indexed": false,
+          "inbuilt_model": false
+        },
+        {
+          "data_type": "text",
+          "display_name": "SEO Title",
+          "uid": "seo_title",
+          "field_metadata": {
+            "description": "",
+            "default_value": "",
+            "version": 3
+          },
+          "format": "",
+          "error_messages": {
+            "format": ""
+          },
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false,
+          "indexed": false,
+          "inbuilt_model": false
+        }
+      ]
+    }
+  ],
+  "description": "",
+  "options": {
+    "is_page": true,
+    "singleton": false,
+    "sub_title": [],
+    "title": "title",
+    "url_prefix": "/",
+    "url_pattern": "/:title"
+  }
+}

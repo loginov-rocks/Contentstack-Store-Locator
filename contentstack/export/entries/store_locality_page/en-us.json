@@ -1,0 +1,50 @@
+{
+  "blt4e3b75e25cbb722a": {
+    "title": "Manchester",
+    "url": "/store-locator/uk/manchester",
+    "stores": [
+      {
+        "uid": "blt5c45963232eec722",
+        "_content_type_uid": "store_detail_page"
+      }
+    ],
+    "seo": {
+      "meta_title": "Stores in Manchester, UK",
+      "meta_description": "Check out our stores in Manchester, UK!",
+      "meta_keywords": "primark, manchester, uk",
+      "enable_search_indexing": true,
+      "seo_title": "Stores in Manchester, UK"
+    },
+    "tags": [
+      "store locator"
+    ],
+    "locale": "en-us",
+    "uid": "blt4e3b75e25cbb722a",
+    "ACL": {},
+    "_version": 2,
+    "_in_progress": false,
+    "publish_details": [
+      {
+        "environment": "bltece53a160d657025",
+        "locale": "en-us",
+        "time": "2023-08-01T21:58:50.225Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 2
+      },
+      {
+        "environment": "bltb90dab96044a39e6",
+        "locale": "en-us",
+        "time": "2023-08-01T21:58:50.225Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 2
+      },
+      {
+        "environment": "blt99f345cbc32fca31",
+        "locale": "en-us",
+        "time": "2023-08-01T21:58:50.225Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 2
+      }
+    ]
+  }
+}

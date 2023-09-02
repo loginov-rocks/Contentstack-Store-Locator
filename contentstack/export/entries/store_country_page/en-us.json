@@ -1,0 +1,50 @@
+{
+  "bltd84cbd409b62006b": {
+    "title": "Stores in the UK",
+    "url": "/store-locator/uk",
+    "localities": [
+      {
+        "uid": "blt4e3b75e25cbb722a",
+        "_content_type_uid": "store_locality_page"
+      }
+    ],
+    "seo": {
+      "meta_title": "Stores in the UK",
+      "meta_description": "Check out our stores in the UK!",
+      "meta_keywords": "primark, uk",
+      "enable_search_indexing": true,
+      "seo_title": "Stores in the UK"
+    },
+    "tags": [
+      "store locator"
+    ],
+    "locale": "en-us",
+    "uid": "bltd84cbd409b62006b",
+    "ACL": {},
+    "_version": 1,
+    "_in_progress": false,
+    "publish_details": [
+      {
+        "environment": "bltece53a160d657025",
+        "locale": "en-us",
+        "time": "2023-08-01T21:58:31.197Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 1
+      },
+      {
+        "environment": "bltb90dab96044a39e6",
+        "locale": "en-us",
+        "time": "2023-08-01T21:58:31.197Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 1
+      },
+      {
+        "environment": "blt99f345cbc32fca31",
+        "locale": "en-us",
+        "time": "2023-08-01T21:58:31.197Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 1
+      }
+    ]
+  }
+}

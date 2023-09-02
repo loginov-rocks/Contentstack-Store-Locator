@@ -1,0 +1,154 @@
+{
+  "blt5c45963232eec722": {
+    "title": "Primark Manchester - Trafford Palazzo",
+    "url": "/store-locator/uk/manchester/trafford-palazzo",
+    "address": "Trafford Palazzo\nManchester M17 8AS\nUnited Kingdom",
+    "primary_phone": "0161 747 3340",
+    "coordinates": {
+      "latitude": "53.466143",
+      "longitude": "-2.341882"
+    },
+    "brand_color": "#008cb4",
+    "blocks": [
+      {
+        "facilities": {
+          "facilities": [
+            "Click And Collect",
+            "Parking",
+            "Pre-Loved Clothing Recycle Box",
+            "Wheelchair Access"
+          ],
+          "_metadata": {
+            "uid": "csc6805963bfb2638a"
+          }
+        }
+      },
+      {
+        "about": {
+          "about": {
+            "uid": "0f26d0c581c34f1eaeb795728bd89dee",
+            "type": "doc",
+            "attrs": {},
+            "children": [
+              {
+                "type": "p",
+                "uid": "645e03e6e3fa41f0bad7e2aec8162407",
+                "attrs": {},
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "aa2d398d2ad34545a191caff51460251",
+                    "type": "span",
+                    "attrs": {},
+                    "children": [
+                      {
+                        "text": "Shop the latest trends at amazing prices at "
+                      },
+                      {
+                        "text": "Primark Manchester",
+                        "bold": true
+                      },
+                      {
+                        "text": ". Adored by fashion fans and value seekers in Manchester alike, Primark is the destination store for this season’s must haves. Discover women’s, men’s and children’s fashions, as well as lingerie, beauty and homeware. With sustainable cotton and Primark PS cruelty free beauty ranges dropping on the regular, you can explore products that fit your budget and lifestyle. Visit your local Primark Manchester for amazing fashion at amazing prices."
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "_version": 2
+          },
+          "_metadata": {
+            "uid": "cs37696110a9f5b983"
+          }
+        }
+      },
+      {
+        "hours": {
+          "days": [
+            {
+              "day": "Mon-Sat",
+              "_metadata": {
+                "uid": "csc58ed3019b0dd2ca"
+              },
+              "start_time": "10:00",
+              "end_time": "22:00"
+            },
+            {
+              "day": "Sun",
+              "_metadata": {
+                "uid": "cs253a39ee8bb19437"
+              },
+              "start_time": "12:00",
+              "end_time": "18:00"
+            }
+          ],
+          "_metadata": {
+            "uid": "cs4c63144eebce91fb"
+          },
+          "notice": "*Due to Sunday Trading Laws, the store will be open from 11:30 AM for browsing only."
+        }
+      },
+      {
+        "networks": {
+          "links": [
+            {
+              "title": "Google Maps",
+              "href": "https://goo.gl/maps/fkKTCTXNnx8AF7Fe7"
+            },
+            {
+              "title": "Instagram",
+              "href": "https://www.instagram.com/Primark/"
+            }
+          ],
+          "_metadata": {
+            "uid": "cs5545a024f61bc22c"
+          }
+        }
+      }
+    ],
+    "seo": {
+      "meta_title": "Primark Manchester - Trafford Palazzo",
+      "meta_description": "Shop the latest trends at amazing prices at Primark Manchester. Adored by fashion fans and value seekers in Manchester alike, Primark is the destination store for this season’s must haves. Discover women’s, men’s and children’s fashions, as well as lingerie, beauty and homeware. With sustainable cotton and Primark PS cruelty free beauty ranges dropping on the regular, you can explore products that fit your budget and lifestyle. Visit your local Primark Manchester for amazing fashion at amazing prices.",
+      "meta_keywords": "primark, machester, uk",
+      "enable_search_indexing": true,
+      "seo_title": "Primark Manchester - Trafford Palazzo"
+    },
+    "tags": [
+      "store locator"
+    ],
+    "locale": "en-us",
+    "uid": "blt5c45963232eec722",
+    "ACL": {},
+    "_version": 2,
+    "_in_progress": false,
+    "publish_details": [
+      {
+        "environment": "bltece53a160d657025",
+        "locale": "en-us",
+        "time": "2023-08-01T22:27:21.292Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 2
+      },
+      {
+        "environment": "blt99f345cbc32fca31",
+        "locale": "en-us",
+        "time": "2023-08-01T22:27:21.292Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 2
+      },
+      {
+        "environment": "bltb90dab96044a39e6",
+        "locale": "en-us",
+        "time": "2023-08-01T22:27:21.292Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 2
+      }
+    ]
+  }
+}

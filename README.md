@@ -1,8 +1,27 @@
 # Contentstack Store Locator
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Template Store Locator Next.js-based implementation for Contentstack.
+[Primark Store Locator](https://www.primark.com/en-us/stores) taken as demonstration example, no affiliation.
 
 ## Getting Started
+
+### Contentstack
+
+Unfortunately, exported content types could not be imported without changes:
+
+1. Remove `format` property from `store_detail_page.json` for Latitude and Longitude (lines 87 and 106).
+2. Remove `Brand Color` custom field completely (lines 122-135).
+3. Import `store_detail_page.json` content type.
+4. Enable (or make sure it's enabled) out-of-the-box `Color Picker` extension.
+5. Add `Brand Color` custom field manually using `Color Picker` extension with configuration similar to the exported in JSON.
+6. Import `store_locality_page.json` content type.
+7. Import `store_country_page.json` content type.
+
+Entries could not be imported into Contentstack as is, so just use data from JSON to create and deploy them manually.
+
+### Next.js
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
