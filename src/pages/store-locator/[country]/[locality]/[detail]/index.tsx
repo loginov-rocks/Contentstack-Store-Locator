@@ -1,4 +1,5 @@
 import type { GetServerSideProps } from 'next';
+import Link from 'next/link';
 
 import { StoreDetailPageEntry, queryStoreDetailPageEntry } from '@/contentstack/storeLocator';
 
@@ -6,11 +7,19 @@ interface Props {
   entry: StoreDetailPageEntry;
 }
 
-export default function StoreDetailPage(props: Props) {
+export default function StoreDetailPage({ entry }: Props) {
   return (
     <>
-      <h1>{props.entry.title}</h1>
-      <pre>{JSON.stringify(props, null, 2)}</pre>
+      <ul>
+        <li>
+          <Link href='/'>Home</Link>
+        </li>
+        <li>
+          <Link href='/store-locator'>Store Locator</Link>
+        </li>
+      </ul>
+      <h1>{entry.title}</h1>
+      <pre>{JSON.stringify(entry, null, 2)}</pre>
     </>
   );
 };
