@@ -7,7 +7,7 @@ Template Store Locator Next.js-based implementation for Contentstack.
 
 ### Contentstack
 
-Unfortunately, exported content types could not be imported without changes:
+Unfortunately, exported content types could not be imported without some adjustments:
 
 1. Remove `format` property from `store_detail_page.json` for Latitude and Longitude (lines 87 and 106).
 2. Remove `Brand Color` custom field completely (lines 122-135).
@@ -19,7 +19,15 @@ Unfortunately, exported content types could not be imported without changes:
 
 Entries could not be imported into Contentstack as is, so just use data from JSON to create and deploy them manually.
 
+Next, [Create a Delivery Token](https://www.contentstack.com/docs/developers/create-tokens/create-a-delivery-token).
+
 ### Next.js
+
+Copy `.env.local.sample` to `.env.local` and configure at least the following environment variables:
+
+1. `CONTENTSTACK_API_KEY`
+2. `CONTENTSTACK_DELIVERY_TOKEN`
+3. `CONTENTSTACK_ENVIRONMENT`
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
