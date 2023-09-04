@@ -6,8 +6,9 @@ Template Store Locator Next.js-based implementation for Contentstack.
 ## Features
 
 1. Configurable SEO-friendly pages per country, locality, and store details.
-2. Dynamic map of stores.
-3. Automatic redirect on locality click if it contains only one store.
+2. Dynamic stores map.
+3. Distance-based geo search with key words suggestions.
+4. Automatic redirect on locality click if it contains only one store.
 
 ## Getting Started
 

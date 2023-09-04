@@ -1,8 +1,8 @@
-import { StoreDetailPageEntry } from '@/contentstack/storeLocator';
+import { Store } from '@/pages/api/store-locator';
 import Link from 'next/link';
 
 interface Props {
-  stores: StoreDetailPageEntry[];
+  stores: Store[];
 }
 
 export const StoresList = ({ stores }: Props) => {
