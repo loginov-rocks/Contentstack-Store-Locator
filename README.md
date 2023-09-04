@@ -3,6 +3,12 @@
 Template Store Locator Next.js-based implementation for Contentstack.
 [Primark Store Locator](https://www.primark.com/en-gb/stores) taken as demonstration example, no affiliation.
 
+## Features
+
+1. Configurable SEO-friendly pages per country, locality, and store details.
+2. Dynamic map of stores.
+3. Automatic redirect on locality click if it contains only one store.
+
 ## Getting Started
 
 ### Contentstack

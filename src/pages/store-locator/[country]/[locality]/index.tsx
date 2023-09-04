@@ -47,6 +47,16 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     return { notFound: true };
   }
 
+  // Automatically redirect to the store page if it's the only one within this locality.
+  if (entry.stores.length === 1) {
+    return {
+      redirect: {
+        destination: entry.stores[0].url,
+        permanent: true,
+      }
+    }
+  }
+
   return {
     props: { entry },
   };
