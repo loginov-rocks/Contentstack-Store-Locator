@@ -12,6 +12,10 @@ interface ContentstackEntry {
 }
 
 export interface StoreDetailPageEntry extends ContentstackEntry {
+  coordinates: {
+    latitude: string;
+    longitude: string;
+  };
   seo: SeoGlobalField;
   title: string;
   url: string;
@@ -66,6 +70,7 @@ export const queryStoreCountryPageEntries = async (): Promise<StoreCountryPageEn
 export const queryStoreCountryPageEntry = async (url: string): Promise<StoreCountryPageEntry> => {
   const entry = await queryEntry('store_country_page', url, [
     'localities',
+    'localities.stores',
   ]);
 
   return entry as StoreCountryPageEntry;

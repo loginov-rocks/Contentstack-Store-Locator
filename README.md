@@ -1,7 +1,7 @@
 # Contentstack Store Locator
 
 Template Store Locator Next.js-based implementation for Contentstack.
-[Primark Store Locator](https://www.primark.com/en-us/stores) taken as demonstration example, no affiliation.
+[Primark Store Locator](https://www.primark.com/en-gb/stores) taken as demonstration example, no affiliation.
 
 ## Getting Started
 
@@ -21,6 +21,10 @@ Entries could not be imported into Contentstack as is, so just use data from JSO
 
 Next, [Create a Delivery Token](https://www.contentstack.com/docs/developers/create-tokens/create-a-delivery-token).
 
+### Google Cloud
+
+Create API key restricted to Geocoding API, Maps JavaScript API and Places API.
+
 ### Next.js
 
 Copy `.env.local.sample` to `.env.local` and configure at least the following environment variables:
@@ -28,6 +32,7 @@ Copy `.env.local.sample` to `.env.local` and configure at least the following en
 1. `CONTENTSTACK_API_KEY`
 2. `CONTENTSTACK_DELIVERY_TOKEN`
 3. `CONTENTSTACK_ENVIRONMENT`
+4. `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -61,3 +66,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Reference
+
+1. https://github.com/contentstack/contentstack-nextjs-starter-app
+2. https://www.99darshan.com/posts/interactive-maps-using-nextjs-and-google-maps

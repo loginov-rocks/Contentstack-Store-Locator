@@ -2,12 +2,21 @@ import type { GetServerSideProps } from 'next';
 import Link from 'next/link';
 
 import { StoreLocalityPageEntry, queryStoreLocalityPageEntry } from '@/contentstack/storeLocator';
+import { Map } from '@/storeLocator/Map';
 
 interface Props {
   entry: StoreLocalityPageEntry;
 }
 
 export default function StoreLocalityPage({ entry }: Props) {
+  const markers: Array<{ latitude: number; longitude: number; }> = [];
+  entry.stores.forEach((store) => {
+    markers.push({
+      latitude: parseFloat(store.coordinates.latitude),
+      longitude: parseFloat(store.coordinates.longitude),
+    });
+  });
+
   return (
     <>
       <ul>
@@ -26,6 +35,7 @@ export default function StoreLocalityPage({ entry }: Props) {
           </li>
         ))}
       </ul>
+      <Map markers={markers} />
     </>
   );
 };
