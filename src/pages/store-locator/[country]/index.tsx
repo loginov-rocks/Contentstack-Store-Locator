@@ -1,8 +1,10 @@
 import type { GetServerSideProps } from 'next';
 import Link from 'next/link';
+import { useState } from 'react';
 
 import { StoreCountryPageEntry, queryStoreCountryPageEntry } from '@/contentstack/storeLocator';
 import { Map } from '@/storeLocator/Map';
+import { SearchBox } from '@/storeLocator/SearchBox';
 
 interface Props {
   entry: StoreCountryPageEntry;
@@ -19,6 +21,12 @@ export default function StoreContryPage({ entry }: Props) {
     });
   });
 
+  const [isMapLoaded, setIsMapLoaded] = useState(false);
+
+  const handleSelect = (address: string, latitude: number, longitude: number) => {
+    console.log(address, latitude, longitude);
+  };
+
   return (
     <>
       <ul>
@@ -30,6 +38,9 @@ export default function StoreContryPage({ entry }: Props) {
         </li>
       </ul>
       <h1>{entry.title}</h1>
+      {isMapLoaded && (
+        <SearchBox countryCode={entry.country_code} onSelect={handleSelect} />
+      )}
       <ul>
         {entry.localities.map((locality) => (
           <li key={locality.uid}>
@@ -37,7 +48,7 @@ export default function StoreContryPage({ entry }: Props) {
           </li>
         ))}
       </ul>
-      <Map markers={markers} />
+      <Map markers={markers} onLoad={() => setIsMapLoaded(true)} />
     </>
   );
 };

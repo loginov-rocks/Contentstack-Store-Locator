@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import { StoreLocalityPageEntry, queryStoreLocalityPageEntry } from '@/contentstack/storeLocator';
 import { Map } from '@/storeLocator/Map';
+import { StoresList } from '@/storeLocator/StoresList';
 
 interface Props {
   entry: StoreLocalityPageEntry;
@@ -28,13 +29,7 @@ export default function StoreLocalityPage({ entry }: Props) {
         </li>
       </ul>
       <h1>{entry.title}</h1>
-      <ul>
-        {entry.stores.map((store) => (
-          <li key={store.uid}>
-            <Link href={store.url}>{store.title}</Link>
-          </li>
-        ))}
-      </ul>
+      <StoresList stores={entry.stores} />
       <Map markers={markers} />
     </>
   );

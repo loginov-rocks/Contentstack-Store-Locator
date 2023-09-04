@@ -29,6 +29,7 @@ export interface StoreLocalityPageEntry extends ContentstackEntry {
 }
 
 export interface StoreCountryPageEntry extends ContentstackEntry {
+  country_code: string;
   localities: StoreLocalityPageEntry[];
   seo: SeoGlobalField;
   title: string;

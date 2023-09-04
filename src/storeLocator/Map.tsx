@@ -1,19 +1,23 @@
 import { GoogleMap, MarkerF, useLoadScript } from '@react-google-maps/api';
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
 
 interface Props {
   markers: Array<{
     latitude: number;
     longitude: number;
   }>;
+  onLoad?: () => void;
 }
 
-export const Map = ({ markers }: Props) => {
+export const Map = ({ markers, onLoad }: Props) => {
+  const libraries = useMemo(() => ['places'], []);
+
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
+    libraries: libraries as any,
   });
 
-  const onLoad = useCallback((map: google.maps.Map) => {
+  const handleLoad = useCallback((map: google.maps.Map) => {
     if (markers.length === 1) {
       // Center to single marker.
       const { latitude, longitude } = markers[0];
@@ -29,7 +33,11 @@ export const Map = ({ markers }: Props) => {
 
       map.fitBounds(bounds);
     }
-  }, [markers]);
+
+    if (onLoad) {
+      onLoad();
+    }
+  }, [markers, onLoad]);
 
   if (!isLoaded) {
     return <div>Loading map...</div>;
@@ -39,7 +47,7 @@ export const Map = ({ markers }: Props) => {
     <GoogleMap
       mapContainerStyle={{ width: '100%', height: '600px' }}
       mapTypeId={window.google.maps.MapTypeId.ROADMAP}
-      onLoad={onLoad}
+      onLoad={handleLoad}
       options={{
         fullscreenControl: false,
         mapTypeControl: false,
