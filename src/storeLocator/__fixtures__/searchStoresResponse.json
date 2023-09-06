@@ -1,0 +1,29 @@
+{
+  "address": "London, UK",
+  "latitude": 51.5072178,
+  "longitude": -0.1275862,
+  "maxDistance": 20000,
+  "stores": [
+    {
+      "coordinates": {
+        "latitude": "51.5165345",
+        "longitude": "-0.1311875"
+      },
+      "distance": 1065.8251178255882,
+      "title": "Oxford Street East",
+      "uid": "blt2cf3dfe8e515cb43",
+      "url": "/store-locator/gb/london/14-28-oxford-street"
+    },
+    {
+      "coordinates": {
+        "latitude": "51.5134201",
+        "longitude": "-0.1940406"
+      },
+      "distance": 4651.697035761292,
+      "title": "Oxford Street West",
+      "uid": "blt138ac55b020ec29b",
+      "url": "/store-locator/gb/london/499-517-oxford-street"
+    }
+  ],
+  "url": "/store-locator/gb"
+}

@@ -1,0 +1,141 @@
+{
+  "_version": 4,
+  "locale": "en-us",
+  "uid": "blt2cf3dfe8e515cb43",
+  "ACL": {},
+  "_in_progress": false,
+  "address": "14-28 Oxford Street, Fitzrovia\nLondon W1D 1AU\nUnited Kingdom",
+  "blocks": [
+    {
+      "facilities": {
+        "facilities": [
+          "Beauty Studio",
+          "Parking",
+          "Pre-Loved Clothing Recycle Box",
+          "Wheelchair Access",
+          "Wornwell",
+          "Tasty By Greggs Eat In And Take Out"
+        ],
+        "_metadata": {
+          "uid": "csbec661cad37b0477"
+        }
+      }
+    },
+    {
+      "about": {
+        "about": {
+          "uid": "250e87e3058c43e0ac5413d827924093",
+          "type": "doc",
+          "attrs": {},
+          "children": [
+            {
+              "type": "p",
+              "uid": "b62aa361ea76488d85551d43f11abd06",
+              "attrs": {
+                "style": {},
+                "redactor-attributes": {},
+                "dir": "ltr"
+              },
+              "children": [
+                {
+                  "text": ""
+                },
+                {
+                  "uid": "5a531f6a2ab6405dbf9a9dd31c7f7d86",
+                  "type": "span",
+                  "attrs": {
+                    "style": {},
+                    "redactor-attributes": {},
+                    "dir": "ltr"
+                  },
+                  "children": [
+                    {
+                      "text": "Looking for a clothes shop near Tottenham Court Road for this season’s must-haves? We’ve got you covered! Whether you’re local to our Oxford Street East store, or visiting after a trip to Covent Garden and Oxford Circus, you can shop the latest trends at amazing prices at Primark Oxford Street East. Adored by fashion fans and value seekers in London alike, Primark is the destination store! Discover our range of women’s clothing near Tottenham Court Road, men’s clothing and kids’ fashion, as well as lingerie, beauty and homeware. With sustainable cotton and Primark PS cruelty-free beauty ranges dropping on the regular, you can explore products that fit your budget and lifestyle. But that’s not all! We've got everything you need for your little ones to start their new term in style. Looking for a school uniform shop in Oxford Street East? Our store is the perfect place to get those everyday clothing essentials, as well as school supplies for serious note-taking! To hold all those school must-haves, check out our Disney school bags for a cute twist on the typical school backpack style. Need to get your hands on a pair of kids’ school shoes near Oxford Circus before the first day of term? Our range will keep little feet comfortable all day long. So if you’re shopping in and around Oxford Street East, visit your local Primark for amazing fashion at amazing prices!"
+                    }
+                  ]
+                },
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ],
+          "_version": 4
+        },
+        "_metadata": {
+          "uid": "cs81cc8061d25af34e"
+        }
+      }
+    },
+    {
+      "hours": {
+        "days": [
+          {
+            "day": "Mon-Sat",
+            "_metadata": {
+              "uid": "cs4252b29773fa688d"
+            },
+            "start_time": "08:00",
+            "end_time": "22:00"
+          },
+          {
+            "day": "Sun",
+            "_metadata": {
+              "uid": "csbd99c8953081a660"
+            },
+            "start_time": "11:30",
+            "end_time": "18:00"
+          }
+        ],
+        "_metadata": {
+          "uid": "csa9edc1428743f22f"
+        },
+        "notice": "*Due to Sunday trading laws the store will be open from 11.30 – 12.00 for browsing only."
+      }
+    },
+    {
+      "networks": {
+        "links": [
+          {
+            "title": "Google Maps",
+            "href": "https://goo.gl/maps/BDwwqKZ8eMBhZget6"
+          },
+          {
+            "title": "Instagram",
+            "href": "https://www.instagram.com/Primark/"
+          }
+        ],
+        "_metadata": {
+          "uid": "cs96ec0d436d4f371f"
+        }
+      }
+    }
+  ],
+  "brand_color": "#008cb4",
+  "coordinates": {
+    "latitude": "51.5165345",
+    "longitude": "-0.1311875"
+  },
+  "created_at": "2023-09-04T02:38:00.315Z",
+  "created_by": "blt4b67e1eb6412cbdf",
+  "primary_phone": "020 7580 5510",
+  "seo": {
+    "meta_title": "Oxford Street East",
+    "meta_description": "Find your Amazing at Primark 14-28 Oxford Street in London. Check our opening times and pick up your shopping in store with our new Primark Click & Collect.",
+    "keywords": "primark, london, uk",
+    "enable_search_indexing": true
+  },
+  "tags": [
+    "store locator"
+  ],
+  "title": "Oxford Street East",
+  "updated_at": "2023-09-06T04:04:21.368Z",
+  "updated_by": "blt4b67e1eb6412cbdf",
+  "url": "/store-locator/gb/london/14-28-oxford-street",
+  "publish_details": {
+    "environment": "blt84c6b4b3741ea479",
+    "locale": "en-us",
+    "time": "2023-09-06T04:04:24.089Z",
+    "user": "blt4b67e1eb6412cbdf"
+  }
+}

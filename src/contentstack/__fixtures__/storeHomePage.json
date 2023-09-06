@@ -1,0 +1,70 @@
+{
+  "_version": 3,
+  "locale": "en-us",
+  "uid": "blta3c3ec271ef0e078",
+  "ACL": {},
+  "_in_progress": false,
+  "countries": [
+    {
+      "_content_type_uid": "store_country_page",
+      "_version": 4,
+      "locale": "en-us",
+      "uid": "blt436cc9f44113d0fc",
+      "ACL": {},
+      "_in_progress": false,
+      "country_code": "gb",
+      "created_at": "2023-09-02T02:59:14.330Z",
+      "created_by": "blt4b67e1eb6412cbdf",
+      "localities": [
+        {
+          "uid": "bltf3662d3d9aaef0a9",
+          "_content_type_uid": "store_locality_page"
+        },
+        {
+          "uid": "blt5c9974a4936550b6",
+          "_content_type_uid": "store_locality_page"
+        }
+      ],
+      "seo": {
+        "meta_title": "Stores in the United Kingdom",
+        "meta_description": "Our stores in the United Kingdom",
+        "keywords": "primark, uk",
+        "enable_search_indexing": true
+      },
+      "tags": [
+        "store locator"
+      ],
+      "title": "United Kingdom",
+      "updated_at": "2023-09-06T03:54:29.461Z",
+      "updated_by": "blt4b67e1eb6412cbdf",
+      "url": "/store-locator/gb",
+      "publish_details": {
+        "environment": "blt84c6b4b3741ea479",
+        "locale": "en-us",
+        "time": "2023-09-06T03:54:32.277Z",
+        "user": "blt4b67e1eb6412cbdf"
+      }
+    }
+  ],
+  "created_at": "2023-09-06T03:52:33.930Z",
+  "created_by": "blt4b67e1eb6412cbdf",
+  "seo": {
+    "meta_title": "Store Locator",
+    "meta_description": "Store Locator",
+    "keywords": "primark, uk",
+    "enable_search_indexing": true
+  },
+  "tags": [
+    "store locator"
+  ],
+  "title": "Store Locator",
+  "updated_at": "2023-09-06T03:54:53.885Z",
+  "updated_by": "blt4b67e1eb6412cbdf",
+  "url": "/store-locator",
+  "publish_details": {
+    "environment": "blt84c6b4b3741ea479",
+    "locale": "en-us",
+    "time": "2023-09-06T03:54:56.991Z",
+    "user": "blt4b67e1eb6412cbdf"
+  }
+}

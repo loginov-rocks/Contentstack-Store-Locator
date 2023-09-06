@@ -1,13 +1,13 @@
 import type { GetServerSideProps } from 'next';
 import Link from 'next/link';
 
-import { StoreCountryPageEntry, queryStoreCountryPageEntries } from '@/contentstack/storeLocator';
+import { StoreHomePageEntry, queryStoreHomePageEntry } from '@/contentstack/storeLocator';
 
 interface Props {
-  entries: StoreCountryPageEntry[];
+  entry: StoreHomePageEntry;
 }
 
-export default function StoreHomePage({ entries }: Props) {
+export default function StoreHomePage({ entry }: Props) {
   return (
     <>
 
@@ -17,12 +17,12 @@ export default function StoreHomePage({ entries }: Props) {
         </li>
       </ul>
 
-      <h1>Store Locator</h1>
+      <h1>{entry.title}</h1>
 
       <ul>
-        {entries.map((entry) => (
-          <li key={entry.uid}>
-            <Link href={entry.url}>{entry.title}</Link>
+        {entry.countries.map((country) => (
+          <li key={country.uid}>
+            <Link href={country.url}>{country.title}</Link>
           </li>
         ))}
       </ul>
@@ -31,14 +31,14 @@ export default function StoreHomePage({ entries }: Props) {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  const entries = await queryStoreCountryPageEntries();
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const entry = await queryStoreHomePageEntry(context.resolvedUrl);
 
-  if (!entries) {
+  if (!entry) {
     return { notFound: true };
   }
 
   return {
-    props: { entries },
+    props: { entry },
   };
 }

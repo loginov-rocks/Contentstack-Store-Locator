@@ -36,7 +36,14 @@ export interface StoreCountryPageEntry extends ContentstackEntry {
   url: string;
 }
 
-type Entry = StoreCountryPageEntry | StoreLocalityPageEntry | StoreDetailPageEntry;
+export interface StoreHomePageEntry extends ContentstackEntry {
+  countries: StoreCountryPageEntry[];
+  seo: SeoGlobalField;
+  title: string;
+  url: string;
+}
+
+type Entry = StoreHomePageEntry | StoreCountryPageEntry | StoreLocalityPageEntry | StoreDetailPageEntry;
 
 const buildQuery = (contentType: string, references: string[] | void = undefined) => {
   const query = Stack.ContentType(contentType).Query();
@@ -50,22 +57,18 @@ const buildQuery = (contentType: string, references: string[] | void = undefined
   return query;
 }
 
-const queryEntries = async (contentType: string, references: string[] | void = undefined): Promise<Entry[]> => {
-  const entries = await buildQuery(contentType, references).find();
-
-  return entries[0];
-}
-
 const queryEntry = async (contentType: string, url: string, references: string[] | void = undefined): Promise<Entry> => {
   const entries = await buildQuery(contentType, references).where('url', url).find();
 
   return entries[0][0];
 }
 
-export const queryStoreCountryPageEntries = async (): Promise<StoreCountryPageEntry[]> => {
-  const entries = await queryEntries('store_country_page');
+export const queryStoreHomePageEntry = async (url: string): Promise<StoreHomePageEntry> => {
+  const entry = await queryEntry('store_home_page', url, [
+    'countries',
+  ]);
 
-  return entries as StoreCountryPageEntry[];
+  return entry as StoreHomePageEntry;
 }
 
 export const queryStoreCountryPageEntry = async (url: string): Promise<StoreCountryPageEntry> => {
