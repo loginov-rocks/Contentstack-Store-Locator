@@ -1,13 +1,14 @@
 # Contentstack Store Locator
 
-Template Store Locator Next.js-based implementation for Contentstack.
+Boilerplate Store Locator implementation for Contentstack based on Next.js and Google APIs.
+
 [Primark Store Locator](https://www.primark.com/en-gb/stores) taken as demonstration example, no affiliation.
 
 ## Features
 
 1. Configurable SEO-friendly pages per country, locality, and store details.
-2. Dynamic stores map.
-3. Distance-based geo search with key words suggestions.
+2. Dynamic stores map powered by Google Maps JavaScript API.
+3. Distance-based geo search with key words suggestions powered by Google Geocoding and Places APIs.
 4. Automatic redirect on locality click if it contains only one store.
 
 ## Getting Started
@@ -28,9 +29,9 @@ Entries could not be imported into Contentstack as is, so just use data from JSO
 
 Next, [Create a Delivery Token](https://www.contentstack.com/docs/developers/create-tokens/create-a-delivery-token).
 
-### Google Cloud
+### Google APIs
 
-Create API key restricted to Geocoding API, Maps JavaScript API and Places API.
+[Create API key](https://developers.google.com/maps/documentation/javascript/get-api-key) restricted to Geocoding API, Maps JavaScript API and Places API.
 
 ### Next.js
 
@@ -78,3 +79,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 1. https://github.com/contentstack/contentstack-nextjs-starter-app
 2. https://www.99darshan.com/posts/interactive-maps-using-nextjs-and-google-maps
+3. https://www.npmjs.com/package/@react-google-maps/api
+4. https://www.npmjs.com/package/use-places-autocomplete

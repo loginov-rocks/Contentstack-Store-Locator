@@ -20,6 +20,7 @@ export default function StoreLocalityPage({ entry }: Props) {
 
   return (
     <>
+
       <ul>
         <li>
           <Link href='/'>Home</Link>
@@ -28,9 +29,13 @@ export default function StoreLocalityPage({ entry }: Props) {
           <Link href='/store-locator'>Store Locator</Link>
         </li>
       </ul>
+
       <h1>{entry.title}</h1>
+
       <StoresList stores={entry.stores} />
+
       <Map markers={markers} />
+
     </>
   );
 };

@@ -8,11 +8,21 @@ interface Props {
 export const StoresList = ({ stores }: Props) => {
   return (
     <ul>
-      {stores.map((store) => (
-        <li key={store.uid}>
-          <Link href={store.url}>{store.title}</Link>
-        </li>
-      ))}
+      {stores.map((store) => {
+        const distance = store.distance ? (Math.round(store.distance) / 1000).toFixed(2).toLocaleString() : null;
+
+        return (
+          <li key={store.uid}>
+            <Link href={store.url}>{store.title}</Link>
+            {distance && (
+              <>
+                {' '}
+                <small>{distance} km</small>
+              </>
+            )}
+          </li>
+        );
+      })}
     </ul>
   );
 };

@@ -14,7 +14,7 @@ export interface Store {
   url: string;
 }
 
-interface Response {
+export interface Response {
   address: string;
   latitude: number;
   longitude: number;

@@ -10,12 +10,15 @@ interface Props {
 export default function StoreHomePage({ entries }: Props) {
   return (
     <>
+
       <ul>
         <li>
           <Link href='/'>Home</Link>
         </li>
       </ul>
+
       <h1>Store Locator</h1>
+
       <ul>
         {entries.map((entry) => (
           <li key={entry.uid}>
@@ -23,6 +26,7 @@ export default function StoreHomePage({ entries }: Props) {
           </li>
         ))}
       </ul>
+
     </>
   );
 };

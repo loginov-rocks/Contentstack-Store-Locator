@@ -1,5 +1,5 @@
 import { GoogleMap, MarkerF, useLoadScript } from '@react-google-maps/api';
-import { useCallback, useMemo } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 interface Props {
   markers: Array<{
@@ -17,7 +17,13 @@ export const Map = ({ markers, onLoad }: Props) => {
     libraries: libraries as any,
   });
 
-  const handleLoad = useCallback((map: google.maps.Map) => {
+  const [map, setMap] = useState<google.maps.Map | null>(null);
+
+  useEffect(() => {
+    if (markers.length === 0 || map === null) {
+      return;
+    }
+
     if (markers.length === 1) {
       // Center to single marker.
       const { latitude, longitude } = markers[0];
@@ -33,11 +39,19 @@ export const Map = ({ markers, onLoad }: Props) => {
 
       map.fitBounds(bounds);
     }
+  }, [markers, map]);
+
+  const handleLoad = useCallback((map: google.maps.Map) => {
+    setMap(map);
 
     if (onLoad) {
       onLoad();
     }
-  }, [markers, onLoad]);
+  }, [onLoad]);
+
+  const handleUnmount = useCallback(() => {
+    setMap(null);
+  }, []);
 
   if (!isLoaded) {
     return <div>Loading map...</div>;
@@ -48,6 +62,7 @@ export const Map = ({ markers, onLoad }: Props) => {
       mapContainerStyle={{ width: '100%', height: '600px' }}
       mapTypeId={window.google.maps.MapTypeId.ROADMAP}
       onLoad={handleLoad}
+      onUnmount={handleUnmount}
       options={{
         fullscreenControl: false,
         mapTypeControl: false,

@@ -18,6 +18,7 @@ export default function StoreDetailPage({ entry }: Props) {
 
   return (
     <>
+
       <ul>
         <li>
           <Link href='/'>Home</Link>
@@ -26,9 +27,13 @@ export default function StoreDetailPage({ entry }: Props) {
           <Link href='/store-locator'>Store Locator</Link>
         </li>
       </ul>
+
       <h1>{entry.title}</h1>
+
       <Map markers={markers} />
+
       <pre>{JSON.stringify(entry, null, 2)}</pre>
+
     </>
   );
 };
