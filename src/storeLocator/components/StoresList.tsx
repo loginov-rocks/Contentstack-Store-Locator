@@ -1,5 +1,6 @@
-import { Store } from '@/pages/api/store-locator';
 import Link from 'next/link';
+
+import { Store } from '@/storeLocator/interfaces';
 
 interface Props {
   stores: Store[];

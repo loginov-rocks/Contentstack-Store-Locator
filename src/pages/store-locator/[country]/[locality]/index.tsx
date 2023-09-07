@@ -2,8 +2,8 @@ import type { GetServerSideProps } from 'next';
 import Link from 'next/link';
 
 import { StoreLocalityPageEntry, queryStoreLocalityPageEntry } from '@/contentstack/storeLocator';
-import { Map } from '@/storeLocator/Map';
-import { StoresList } from '@/storeLocator/StoresList';
+import { Map } from '@/storeLocator/components/Map';
+import { StoresList } from '@/storeLocator/components/StoresList';
 
 interface Props {
   entry: StoreLocalityPageEntry;

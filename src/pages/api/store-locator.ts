@@ -1,18 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import { queryStoreCountryPageEntry } from '@/contentstack/storeLocator';
-import { calculateDistance } from '@/storeLocator/calculateDistance';
-
-export interface Store {
-  coordinates: {
-    latitude: string;
-    longitude: string;
-  };
-  distance?: number;
-  title: string;
-  uid: string;
-  url: string;
-}
+import { StoreDetailPageEntry, queryStoreCountryPageEntry } from '@/contentstack/storeLocator';
+import { Store } from '@/storeLocator/interfaces';
+import { filterStoresByDistance } from '@/storeLocator/utils/filterStoresByDistance';
 
 export interface Response {
   address: string;
@@ -35,34 +25,24 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   const address = req.query.address as string;
   const latitude = parseFloat(req.query.latitude as string);
   const longitude = parseFloat(req.query.longitude as string);
-  const maxDistance = parseFloat(process.env.STORE_LOCATOR_MAX_DISTANCE as string);
+  const maxDistance = parseFloat(process.env.STORE_LOCATOR_SEARCH_MAX_DISTANCE as string);
   const url = req.query.url as string;
 
-  const entry = await queryStoreCountryPageEntry(url);
+  const storeCountrPageEntry = await queryStoreCountryPageEntry(url);
 
-  if (!entry) {
+  if (!storeCountrPageEntry) {
     return res.status(404).send('Not Found');
   }
 
-  const stores: Store[] = [];
+  const storeDetailPageEntries: StoreDetailPageEntry[] = [];
 
-  entry.localities.forEach((locality) => {
-    locality.stores.forEach((store) => {
-      const storeLatitude = parseFloat(store.coordinates.latitude);
-      const storeLongitude = parseFloat(store.coordinates.longitude);
-      const distance = calculateDistance(latitude, longitude, storeLatitude, storeLongitude);
-
-      if (distance < maxDistance) {
-        stores.push({
-          coordinates: store.coordinates,
-          distance,
-          title: store.title,
-          uid: store.uid,
-          url: store.url,
-        });
-      }
+  storeCountrPageEntry.localities.forEach((storeLocalityPageEntry) => {
+    storeLocalityPageEntry.stores.forEach((storeDetailPageEntry) => {
+      storeDetailPageEntries.push(storeDetailPageEntry);
     });
   });
+
+  const stores = filterStoresByDistance(storeDetailPageEntries, latitude, longitude, maxDistance);
 
   res.status(200).json({ address, latitude, longitude, maxDistance, stores, url });
 };

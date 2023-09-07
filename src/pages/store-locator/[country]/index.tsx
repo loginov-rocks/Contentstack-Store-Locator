@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 import { StoreCountryPageEntry, queryStoreCountryPageEntry } from '@/contentstack/storeLocator';
-import { searchStores, SearchStoresResponse } from '@/storeLocator/api';
-import { Map } from '@/storeLocator/Map';
-import { SearchBox } from '@/storeLocator/SearchBox';
-import { StoresList } from '@/storeLocator/StoresList';
+import { Map } from '@/storeLocator/components/Map';
+import { SearchBox } from '@/storeLocator/components/SearchBox';
+import { StoresList } from '@/storeLocator/components/StoresList';
+import { searchStores, SearchStoresResponse } from '@/storeLocator/apiClient';
 
 interface Props {
   entry: StoreCountryPageEntry;
