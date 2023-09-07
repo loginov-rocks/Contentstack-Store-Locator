@@ -1,10 +1,11 @@
 import type { GetServerSideProps } from 'next';
 import Link from 'next/link';
 
-import { StoreDetailPageEntry, queryStoreDetailPageEntry } from '@/contentstack/storeLocator';
+import { StoreDetailPageEntry, queryStoreDetailPageEntries } from '@/contentstack/storeLocator';
 import { Map } from '@/storeLocator/components/Map';
 import { NearbyStoresList } from '@/storeLocator/components/NearbyStoresList';
 import { Store } from '@/storeLocator/interfaces';
+import { filterStoresByDistance } from '@/storeLocator/utils/filterStoresByDistance';
 
 interface Props {
   entry: StoreDetailPageEntry;
@@ -44,13 +45,23 @@ export default function StoreDetailPage({ entry, nearbyStores }: Props) {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const entry = await queryStoreDetailPageEntry(context.resolvedUrl);
+  // The first candidate for cache/optimization because fetches all store detail page entries.
+  // Consider whether the nearby stores feature is required in your use case.
+  const allEntries = await queryStoreDetailPageEntries();
+
+  // const entry = await queryStoreDetailPageEntry(context.resolvedUrl);
+  const entry = allEntries.find((_entry) => _entry.url === context.resolvedUrl);
 
   if (!entry) {
     return { notFound: true };
   }
 
-  const nearbyStores: Store[] = [];
+  const storeLatitude = parseFloat(entry.coordinates.latitude);
+  const storeLongitude = parseFloat(entry.coordinates.longitude);
+  const maxDistance = parseInt(process.env.STORE_LOCATOR_NEARBY_MAX_DISTANCE as string, 10);
+
+  const nearbyStores: Store[] = filterStoresByDistance(allEntries, storeLatitude, storeLongitude, maxDistance)
+    .filter((_entry) => _entry.uid !== entry.uid);
 
   return {
     props: { entry, nearbyStores },

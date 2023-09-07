@@ -9,7 +9,8 @@ Boilerplate Store Locator implementation for Contentstack based on Next.js and G
 1. Configurable SEO-friendly pages per country, locality, and store details.
 2. Dynamic stores map powered by Google Maps JavaScript API.
 3. Distance-based geo search with keyword suggestions powered by Google Geocoding and Places APIs.
-4. Automatic redirect on locality click if it contains only one store.
+4. Distance-based Nearby Stores list on Store Detail page.
+5. Automatic redirect on locality click if it contains only one store.
 
 ## Architecture
 

@@ -57,6 +57,12 @@ const buildQuery = (contentType: string, references: string[] | void = undefined
   return query;
 }
 
+const queryEntries = async (contentType: string, references: string[] | void = undefined): Promise<Entry[]> => {
+  const entries = await buildQuery(contentType, references).find();
+
+  return entries[0];
+}
+
 const queryEntry = async (contentType: string, url: string, references: string[] | void = undefined): Promise<Entry> => {
   const entries = await buildQuery(contentType, references).where('url', url).find();
 
@@ -86,6 +92,12 @@ export const queryStoreLocalityPageEntry = async (url: string): Promise<StoreLoc
   ]);
 
   return entry as StoreLocalityPageEntry;
+}
+
+export const queryStoreDetailPageEntries = async (): Promise<StoreDetailPageEntry[]> => {
+  const entries = await queryEntries('store_detail_page');
+
+  return entries as StoreDetailPageEntry[];
 }
 
 export const queryStoreDetailPageEntry = async (url: string): Promise<StoreDetailPageEntry> => {

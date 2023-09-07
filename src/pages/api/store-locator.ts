@@ -25,7 +25,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   const address = req.query.address as string;
   const latitude = parseFloat(req.query.latitude as string);
   const longitude = parseFloat(req.query.longitude as string);
-  const maxDistance = parseFloat(process.env.STORE_LOCATOR_SEARCH_MAX_DISTANCE as string);
+  const maxDistance = parseInt(process.env.STORE_LOCATOR_SEARCH_MAX_DISTANCE as string, 10);
   const url = req.query.url as string;
 
   const storeCountrPageEntry = await queryStoreCountryPageEntry(url);
