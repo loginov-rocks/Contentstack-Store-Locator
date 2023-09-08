@@ -23,6 +23,7 @@
     "url": "https://github.com/loginov-rocks/contentstack-store-locator/issues"
   },
   "dependencies": {
+    "@contentstack/json-rte-serializer": "^2.0.2",
     "@react-google-maps/api": "^2.19.2",
     "@types/node": "20.5.8",
     "@types/react": "18.2.21",
@@ -30,6 +31,7 @@
     "contentstack": "^3.17.1",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "html-react-parser": "^4.2.2",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",

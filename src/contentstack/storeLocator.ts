@@ -11,13 +11,71 @@ interface ContentstackEntry {
   uid: string;
 }
 
+export interface StoreDetailPageEntryAboutBlock {
+  about: {
+    // JSON Rich Text Editor.
+    // TODO: Correct type.
+    about: unknown;
+  };
+}
+
+export interface StoreDetailPageEntryFacilitiesBlock {
+  facilities: {
+    // Single Line Textbox, multiple.
+    facilities: string[];
+  };
+}
+
+export interface StoreDetailPageEntryHoursBlock {
+  hours: {
+    // Group, multiple.
+    days: Array<{
+      // Single Line Textbox.
+      day: string;
+      // Single Line Textbox.
+      start_time: string;
+      // Single Line Textbox, optional.
+      end_time?: string;
+    }>;
+    // Single Line Textbox, optional.
+    notice?: string;
+  };
+}
+
+export interface StoreDetailPageEntryNetworksBlock {
+  networks: {
+    // Link, multiple.
+    links: Array<{
+      title: string;
+      href: string;
+    }>;
+  };
+}
+
+export type StoreDetailPageEntryBlock = StoreDetailPageEntryAboutBlock | StoreDetailPageEntryFacilitiesBlock
+  | StoreDetailPageEntryHoursBlock | StoreDetailPageEntryNetworksBlock;
+
 export interface StoreDetailPageEntry extends ContentstackEntry {
+  // Multi Line Textbox, optional.
+  address?: string;
+  // Modular Blocks.
+  blocks: StoreDetailPageEntryBlock[];
+  // Custom, optional.
+  brand_color?: string
+  // Group.
   coordinates: {
+    // Single Line Textbox.
     latitude: string;
+    // Single Line Textbox.
     longitude: string;
   };
+  // Single Line Textbox, optional.
+  primary_phone?: string;
+  // Global.
   seo: SeoGlobalField;
+  // Default Title.
   title: string;
+  // Default URL.
   url: string;
 }
 

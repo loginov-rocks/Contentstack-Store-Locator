@@ -4,8 +4,10 @@ import Link from 'next/link';
 
 import { StoreDetailPageEntry, queryStoreDetailPageEntries } from '@/contentstack/storeLocator';
 import { Map } from '@/storeLocator/components/Map';
-import { NearbyStoresList } from '@/storeLocator/components/NearbyStoresList';
 import { Seo } from '@/storeLocator/components/Seo';
+import { StoreDetailBlocks } from '@/storeLocator/components/StoreDetail/StoreDetailBlocks';
+import { StoreDetailHero } from '@/storeLocator/components/StoreDetail/StoreDetailHero';
+import { StoreDetailNearbyStoresList } from '@/storeLocator/components/StoreDetail/StoreDetailNearbyStoresList';
 import { Store } from '@/storeLocator/interfaces';
 import { filterStoresByDistance } from '@/storeLocator/utils/filterStoresByDistance';
 
@@ -24,28 +26,23 @@ export default function StoreDetailPage({ entry, nearbyStores }: Props) {
 
   return (
     <>
-
       <Head>
         <Seo seo={entry.seo} />
       </Head>
-
-      <ul>
-        <li>
-          <Link href='/'>Home</Link>
-        </li>
-        <li>
-          <Link href='/store-locator'>Store Locator</Link>
-        </li>
-      </ul>
-
-      <h1>{entry.title}</h1>
-
+      <nav>
+        <ul>
+          <li>
+            <Link href='/'>Home</Link>
+          </li>
+          <li>
+            <Link href='/store-locator'>Store Locator</Link>
+          </li>
+        </ul>
+      </nav>
+      <StoreDetailHero storeDetailPageEntry={entry} />
       <Map markers={markers} />
-
-      <NearbyStoresList stores={nearbyStores} />
-
-      <pre>{JSON.stringify(entry, null, 2)}</pre>
-
+      <StoreDetailBlocks storeDetailPageEntryBlocks={entry.blocks} />
+      <StoreDetailNearbyStoresList stores={nearbyStores} />
     </>
   );
 };

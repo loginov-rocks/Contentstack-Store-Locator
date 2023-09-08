@@ -40,6 +40,7 @@ export const filterStoresByDistance = (
 
     if (distance < maxDistance) {
       stores.push({
+        address: storeDetailPageEntry.address,
         coordinates: storeDetailPageEntry.coordinates,
         distance,
         title: storeDetailPageEntry.title,

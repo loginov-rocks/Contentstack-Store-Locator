@@ -1,4 +1,5 @@
 export interface Store {
+  address?: string;
   coordinates: {
     latitude: string;
     longitude: string;

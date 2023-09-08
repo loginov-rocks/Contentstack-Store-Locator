@@ -18,7 +18,13 @@ export const StoresList = ({ stores }: Props) => {
             {distance && (
               <>
                 {' '}
-                <small>{distance} km</small>
+                {distance} km
+              </>
+            )}
+            {store.address && (
+              <>
+                <br />
+                {store.address}
               </>
             )}
           </li>
