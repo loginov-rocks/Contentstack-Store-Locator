@@ -1,8 +1,10 @@
 import type { GetServerSideProps } from 'next';
+import Head from 'next/head';
 import Link from 'next/link';
 
 import { StoreLocalityPageEntry, queryStoreLocalityPageEntry } from '@/contentstack/storeLocator';
 import { Map } from '@/storeLocator/components/Map';
+import { Seo } from '@/storeLocator/components/Seo';
 import { StoresList } from '@/storeLocator/components/StoresList';
 
 interface Props {
@@ -20,22 +22,22 @@ export default function StoreLocalityPage({ entry }: Props) {
 
   return (
     <>
-
-      <ul>
-        <li>
-          <Link href='/'>Home</Link>
-        </li>
-        <li>
-          <Link href='/store-locator'>Store Locator</Link>
-        </li>
-      </ul>
-
+      <Head>
+        <Seo seo={entry.seo} />
+      </Head>
+      <nav>
+        <ul>
+          <li>
+            <Link href='/'>Home</Link>
+          </li>
+          <li>
+            <Link href='/store-locator'>Store Locator</Link>
+          </li>
+        </ul>
+      </nav>
       <h1>{entry.title}</h1>
-
       <StoresList stores={entry.stores} />
-
       <Map markers={markers} />
-
     </>
   );
 };

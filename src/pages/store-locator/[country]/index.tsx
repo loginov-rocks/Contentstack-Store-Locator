@@ -1,10 +1,13 @@
 import type { GetServerSideProps } from 'next';
+import Head from 'next/head';
 import Link from 'next/link';
 import { useState } from 'react';
 
 import { StoreCountryPageEntry, queryStoreCountryPageEntry } from '@/contentstack/storeLocator';
+import { LocalitiesList } from '@/storeLocator/components/LocalitiesList';
 import { Map } from '@/storeLocator/components/Map';
 import { SearchBox } from '@/storeLocator/components/SearchBox';
+import { Seo } from '@/storeLocator/components/Seo';
 import { StoresList } from '@/storeLocator/components/StoresList';
 import { searchStores, SearchStoresResponse } from '@/storeLocator/apiClient';
 
@@ -68,34 +71,25 @@ export default function StoreContryPage({ entry }: Props) {
 
   return (
     <>
-
-      <ul>
-        <li>
-          <Link href='/'>Home</Link>
-        </li>
-        <li>
-          <Link href='/store-locator'>Store Locator</Link>
-        </li>
-      </ul>
-
+      <Head>
+        <Seo seo={entry.seo} />
+      </Head>
+      <nav>
+        <ul>
+          <li>
+            <Link href='/'>Home</Link>
+          </li>
+          <li>
+            <Link href='/store-locator'>Store Locator</Link>
+          </li>
+        </ul>
+      </nav>
       <h1>{entry.title}</h1>
-
       {isMapLoaded && (
         <SearchBox countryCode={entry.country_code} onClear={handleClear} onSelect={handleSelect} />
       )}
-
-      {searchStoresResponse === null ? (
-        <ul>
-          {entry.localities.map((locality) => (
-            <li key={locality.uid}>
-              <Link href={locality.url}>{locality.title}</Link>
-            </li>
-          ))}
-        </ul>
-      ) : renderSearchStores()}
-
+      {searchStoresResponse === null ? <LocalitiesList storeLocalityPageEntries={entry.localities} /> : renderSearchStores()}
       <Map markers={markers} onLoad={() => setIsMapLoaded(true)} />
-
     </>
   );
 };

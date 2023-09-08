@@ -1,6 +1,6 @@
 import { Stack } from './';
 
-interface SeoGlobalField {
+export interface SeoGlobalField {
   meta_title: string;
   meta_description: string;
   keywords: string;

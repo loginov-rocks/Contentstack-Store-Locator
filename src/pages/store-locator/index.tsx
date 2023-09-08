@@ -1,7 +1,10 @@
 import type { GetServerSideProps } from 'next';
+import Head from 'next/head';
 import Link from 'next/link';
 
 import { StoreHomePageEntry, queryStoreHomePageEntry } from '@/contentstack/storeLocator';
+import { CountriesList } from '@/storeLocator/components/CountriesList';
+import { Seo } from '@/storeLocator/components/Seo';
 
 interface Props {
   entry: StoreHomePageEntry;
@@ -10,23 +13,18 @@ interface Props {
 export default function StoreHomePage({ entry }: Props) {
   return (
     <>
-
-      <ul>
-        <li>
-          <Link href='/'>Home</Link>
-        </li>
-      </ul>
-
-      <h1>{entry.title}</h1>
-
-      <ul>
-        {entry.countries.map((country) => (
-          <li key={country.uid}>
-            <Link href={country.url}>{country.title}</Link>
+      <Head>
+        <Seo seo={entry.seo} />
+      </Head>
+      <nav>
+        <ul>
+          <li>
+            <Link href='/'>Home</Link>
           </li>
-        ))}
-      </ul>
-
+        </ul>
+      </nav>
+      <h1>{entry.title}</h1>
+      <CountriesList storeCountryPageEntries={entry.countries} />
     </>
   );
 };

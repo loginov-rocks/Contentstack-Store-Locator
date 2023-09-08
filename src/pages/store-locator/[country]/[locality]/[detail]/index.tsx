@@ -1,9 +1,11 @@
 import type { GetServerSideProps } from 'next';
+import Head from 'next/head';
 import Link from 'next/link';
 
 import { StoreDetailPageEntry, queryStoreDetailPageEntries } from '@/contentstack/storeLocator';
 import { Map } from '@/storeLocator/components/Map';
 import { NearbyStoresList } from '@/storeLocator/components/NearbyStoresList';
+import { Seo } from '@/storeLocator/components/Seo';
 import { Store } from '@/storeLocator/interfaces';
 import { filterStoresByDistance } from '@/storeLocator/utils/filterStoresByDistance';
 
@@ -22,6 +24,10 @@ export default function StoreDetailPage({ entry, nearbyStores }: Props) {
 
   return (
     <>
+
+      <Head>
+        <Seo seo={entry.seo} />
+      </Head>
 
       <ul>
         <li>
