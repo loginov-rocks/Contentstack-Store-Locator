@@ -1,49 +1,146 @@
 {
-  "blt4e3b75e25cbb722a": {
-    "title": "Manchester",
-    "url": "/store-locator/uk/manchester",
+  "bltcb3c7af54662ad3c": {
+    "title": "Boston",
+    "url": "/store-locator/us/boston",
     "stores": [
       {
-        "uid": "blt5c45963232eec722",
+        "uid": "blt0c35e611289a5075",
         "_content_type_uid": "store_detail_page"
       }
     ],
     "seo": {
-      "meta_title": "Stores in Manchester, UK",
-      "meta_description": "Check out our stores in Manchester, UK!",
-      "meta_keywords": "primark, manchester, uk",
-      "enable_search_indexing": true,
-      "seo_title": "Stores in Manchester, UK"
+      "meta_title": "Stores in Boston, MA, USA",
+      "meta_description": "Our stores in Boston, MA, USA",
+      "keywords": "primark, boston, ma, usa",
+      "enable_search_indexing": true
     },
     "tags": [
       "store locator"
     ],
     "locale": "en-us",
-    "uid": "blt4e3b75e25cbb722a",
+    "uid": "bltcb3c7af54662ad3c",
+    "ACL": {},
+    "_version": 1,
+    "_in_progress": false,
+    "publish_details": [
+      {
+        "environment": "blt39671fbd3ff90281",
+        "locale": "en-us",
+        "time": "2023-09-06T04:28:19.649Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 1
+      },
+      {
+        "environment": "blt84c6b4b3741ea479",
+        "locale": "en-us",
+        "time": "2023-09-06T04:28:19.653Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 1
+      },
+      {
+        "environment": "blte4b1e17306c23092",
+        "locale": "en-us",
+        "time": "2023-09-06T04:28:19.656Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 1
+      }
+    ]
+  },
+  "blt5c9974a4936550b6": {
+    "title": "Manchester",
+    "url": "/store-locator/gb/manchester",
+    "stores": [
+      {
+        "uid": "blt9f0970b0e4f7d78b",
+        "_content_type_uid": "store_detail_page"
+      }
+    ],
+    "seo": {
+      "meta_title": "Stores in Manchester, UK",
+      "meta_description": "Our stores in Manchester, UK",
+      "keywords": "primark, manchester, uk",
+      "enable_search_indexing": true
+    },
+    "tags": [
+      "store locator"
+    ],
+    "locale": "en-us",
+    "uid": "blt5c9974a4936550b6",
     "ACL": {},
     "_version": 2,
     "_in_progress": false,
     "publish_details": [
       {
-        "environment": "bltece53a160d657025",
+        "environment": "blt39671fbd3ff90281",
         "locale": "en-us",
-        "time": "2023-08-01T21:58:50.225Z",
+        "time": "2023-09-06T03:57:45.335Z",
         "user": "blt4b67e1eb6412cbdf",
         "version": 2
       },
       {
-        "environment": "bltb90dab96044a39e6",
+        "environment": "blt84c6b4b3741ea479",
         "locale": "en-us",
-        "time": "2023-08-01T21:58:50.225Z",
+        "time": "2023-09-06T03:57:45.339Z",
         "user": "blt4b67e1eb6412cbdf",
         "version": 2
       },
       {
-        "environment": "blt99f345cbc32fca31",
+        "environment": "blte4b1e17306c23092",
         "locale": "en-us",
-        "time": "2023-08-01T21:58:50.225Z",
+        "time": "2023-09-06T03:57:45.342Z",
         "user": "blt4b67e1eb6412cbdf",
         "version": 2
+      }
+    ]
+  },
+  "bltf3662d3d9aaef0a9": {
+    "title": "London",
+    "url": "/store-locator/gb/london",
+    "stores": [
+      {
+        "uid": "blt2cf3dfe8e515cb43",
+        "_content_type_uid": "store_detail_page"
+      },
+      {
+        "uid": "blt138ac55b020ec29b",
+        "_content_type_uid": "store_detail_page"
+      }
+    ],
+    "seo": {
+      "meta_title": "Stores in London, UK",
+      "meta_description": "Our stores in London, UK",
+      "keywords": "primark, london, uk",
+      "enable_search_indexing": true
+    },
+    "tags": [
+      "store locator"
+    ],
+    "locale": "en-us",
+    "uid": "bltf3662d3d9aaef0a9",
+    "ACL": {},
+    "_version": 3,
+    "_in_progress": false,
+    "publish_details": [
+      {
+        "environment": "blt39671fbd3ff90281",
+        "locale": "en-us",
+        "time": "2023-09-06T03:57:20.830Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 3
+      },
+      {
+        "environment": "blt84c6b4b3741ea479",
+        "locale": "en-us",
+        "time": "2023-09-06T03:57:20.836Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 3
+      },
+      {
+        "environment": "blte4b1e17306c23092",
+        "locale": "en-us",
+        "time": "2023-09-06T03:57:20.841Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 3
       }
     ]
   }

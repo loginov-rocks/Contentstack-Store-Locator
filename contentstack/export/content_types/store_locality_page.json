@@ -101,7 +101,7 @@
         {
           "data_type": "text",
           "display_name": "Meta Keywords",
-          "uid": "meta_keywords",
+          "uid": "keywords",
           "field_metadata": {
             "description": "",
             "default_value": "",
@@ -130,26 +130,6 @@
           "mandatory": false,
           "unique": false,
           "non_localizable": false,
-          "indexed": false,
-          "inbuilt_model": false
-        },
-        {
-          "data_type": "text",
-          "display_name": "SEO Title",
-          "uid": "seo_title",
-          "field_metadata": {
-            "description": "",
-            "default_value": "",
-            "version": 3
-          },
-          "format": "",
-          "error_messages": {
-            "format": ""
-          },
-          "mandatory": false,
-          "multiple": false,
-          "non_localizable": false,
-          "unique": false,
           "indexed": false,
           "inbuilt_model": false
         }

@@ -1,6 +1,6 @@
 {
-  "title": "Store Country Page",
-  "uid": "store_country_page",
+  "title": "Store Home Page",
+  "uid": "store_home_page",
   "schema": [
     {
       "data_type": "text",
@@ -25,41 +25,20 @@
       },
       "multiple": false,
       "unique": false,
-      "mandatory": false,
+      "mandatory": true,
       "non_localizable": false
     },
     {
-      "data_type": "text",
-      "display_name": "Country Code",
-      "uid": "country_code",
-      "field_metadata": {
-        "description": "",
-        "default_value": "",
-        "instruction": "ISO 3166-1 Alpha-2",
-        "version": 3
-      },
-      "format": "",
-      "error_messages": {
-        "format": ""
-      },
-      "mandatory": true,
-      "multiple": false,
-      "non_localizable": true,
-      "unique": false,
-      "min": 2,
-      "max": 2
-    },
-    {
       "data_type": "reference",
-      "display_name": "Localities",
+      "display_name": "Countries",
       "reference_to": [
-        "store_locality_page"
+        "store_country_page"
       ],
       "field_metadata": {
         "ref_multiple": true,
         "ref_multiple_content_types": true
       },
-      "uid": "localities",
+      "uid": "countries",
       "mandatory": true,
       "multiple": false,
       "non_localizable": false,
@@ -160,10 +139,8 @@
   "description": "",
   "options": {
     "is_page": true,
-    "singleton": false,
+    "singleton": true,
     "sub_title": [],
-    "title": "title",
-    "url_prefix": "/store-locator/",
-    "url_pattern": "/:title"
+    "title": "title"
   }
 }

@@ -1,0 +1,53 @@
+{
+  "blta3c3ec271ef0e078": {
+    "title": "Store Locator",
+    "url": "/store-locator",
+    "countries": [
+      {
+        "uid": "blt436cc9f44113d0fc",
+        "_content_type_uid": "store_country_page"
+      },
+      {
+        "uid": "blt294ae6003049ed18",
+        "_content_type_uid": "store_country_page"
+      }
+    ],
+    "seo": {
+      "meta_title": "Store Locator",
+      "meta_description": "Store Locator",
+      "keywords": "primark",
+      "enable_search_indexing": true
+    },
+    "tags": [
+      "store locator"
+    ],
+    "locale": "en-us",
+    "uid": "blta3c3ec271ef0e078",
+    "ACL": {},
+    "_version": 4,
+    "_in_progress": false,
+    "publish_details": [
+      {
+        "environment": "blt39671fbd3ff90281",
+        "locale": "en-us",
+        "time": "2023-09-06T04:29:25.979Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 4
+      },
+      {
+        "environment": "blt84c6b4b3741ea479",
+        "locale": "en-us",
+        "time": "2023-09-06T04:29:25.983Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 4
+      },
+      {
+        "environment": "blte4b1e17306c23092",
+        "locale": "en-us",
+        "time": "2023-09-06T04:29:25.987Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 4
+      }
+    ]
+  }
+}

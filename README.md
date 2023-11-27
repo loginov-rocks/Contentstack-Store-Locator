@@ -39,6 +39,7 @@ Unfortunately, exported content types could not be imported without some adjustm
 5. Add the `Brand Color` custom field manually using the `Color Picker` extension with a configuration similar to the exported in JSON.
 6. Import `store_locality_page.json` content type.
 7. Import `store_country_page.json` content type.
+8. Import `store_home_page.json` content type.
 
 Entries could not be imported into Contentstack as is, so just use data from JSON to create and deploy them manually.
 

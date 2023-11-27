@@ -1,15 +1,41 @@
 {
-  "blt5c45963232eec722": {
-    "title": "Primark Manchester - Trafford Palazzo",
-    "url": "/store-locator/uk/manchester/trafford-palazzo",
+  "blt9f0970b0e4f7d78b": {
+    "title": "Manchester - Trafford Palazzo",
+    "url": "/store-locator/gb/manchester/trafford-palazzo",
     "address": "Trafford Palazzo\nManchester M17 8AS\nUnited Kingdom",
     "primary_phone": "0161 747 3340",
     "coordinates": {
       "latitude": "53.466143",
       "longitude": "-2.341882"
     },
-    "brand_color": "#008cb4",
+    "brand_color": "#effbff",
     "blocks": [
+      {
+        "hours": {
+          "days": [
+            {
+              "day": "Mon-Sat",
+              "_metadata": {
+                "uid": "cs14242bf099a4acf2"
+              },
+              "start_time": "10:00",
+              "end_time": "22:00"
+            },
+            {
+              "day": "Sun",
+              "_metadata": {
+                "uid": "cs6feec9ac11459ba0"
+              },
+              "start_time": "12:00",
+              "end_time": "18:00"
+            }
+          ],
+          "_metadata": {
+            "uid": "cs47e04d1cbc12bcb5"
+          },
+          "notice": "*Due to Sunday Trading Laws, the store will be open from 11:30 AM for browsing only."
+        }
+      },
       {
         "facilities": {
           "facilities": [
@@ -19,79 +45,8 @@
             "Wheelchair Access"
           ],
           "_metadata": {
-            "uid": "csc6805963bfb2638a"
+            "uid": "csa4b8b0cdadeb07f8"
           }
-        }
-      },
-      {
-        "about": {
-          "about": {
-            "uid": "0f26d0c581c34f1eaeb795728bd89dee",
-            "type": "doc",
-            "attrs": {},
-            "children": [
-              {
-                "type": "p",
-                "uid": "645e03e6e3fa41f0bad7e2aec8162407",
-                "attrs": {},
-                "children": [
-                  {
-                    "text": ""
-                  },
-                  {
-                    "uid": "aa2d398d2ad34545a191caff51460251",
-                    "type": "span",
-                    "attrs": {},
-                    "children": [
-                      {
-                        "text": "Shop the latest trends at amazing prices at "
-                      },
-                      {
-                        "text": "Primark Manchester",
-                        "bold": true
-                      },
-                      {
-                        "text": ". Adored by fashion fans and value seekers in Manchester alike, Primark is the destination store for this season’s must haves. Discover women’s, men’s and children’s fashions, as well as lingerie, beauty and homeware. With sustainable cotton and Primark PS cruelty free beauty ranges dropping on the regular, you can explore products that fit your budget and lifestyle. Visit your local Primark Manchester for amazing fashion at amazing prices."
-                      }
-                    ]
-                  },
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ],
-            "_version": 2
-          },
-          "_metadata": {
-            "uid": "cs37696110a9f5b983"
-          }
-        }
-      },
-      {
-        "hours": {
-          "days": [
-            {
-              "day": "Mon-Sat",
-              "_metadata": {
-                "uid": "csc58ed3019b0dd2ca"
-              },
-              "start_time": "10:00",
-              "end_time": "22:00"
-            },
-            {
-              "day": "Sun",
-              "_metadata": {
-                "uid": "cs253a39ee8bb19437"
-              },
-              "start_time": "12:00",
-              "end_time": "18:00"
-            }
-          ],
-          "_metadata": {
-            "uid": "cs4c63144eebce91fb"
-          },
-          "notice": "*Due to Sunday Trading Laws, the store will be open from 11:30 AM for browsing only."
         }
       },
       {
@@ -107,47 +62,833 @@
             }
           ],
           "_metadata": {
-            "uid": "cs5545a024f61bc22c"
+            "uid": "cse3e17b775c25f728"
+          }
+        }
+      },
+      {
+        "about": {
+          "about": {
+            "type": "doc",
+            "attrs": {},
+            "uid": "ab15eb437eb2428bb682407d5b760006",
+            "children": [
+              {
+                "type": "p",
+                "uid": "0063557024b844ce96a2a0b6cc7f275d",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "6deb0d57767f439887cea41c04ef9418",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "Shop the latest trends at amazing prices at Primark "
+                      },
+                      {
+                        "text": "Manchester",
+                        "bold": true
+                      },
+                      {
+                        "text": ". Adored by fashion fans and value seekers in Manchester alike, Primark is the destination store for this season’s must haves."
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "uid": "9eb0a9ef91a5419fa6a330587cdfa1e4",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "b90599482a644ddf9380ecfcf5b251d4",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "Discover women’s, men’s and children’s fashions, as well as lingerie, beauty and homeware. With sustainable cotton and Primark PS cruelty free beauty ranges dropping on the regular, you can explore products that fit your budget and lifestyle. Visit your local Primark Manchester for amazing fashion at amazing prices."
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "_version": 5
+          },
+          "_metadata": {
+            "uid": "csb55e926a670f09f0"
           }
         }
       }
     ],
     "seo": {
-      "meta_title": "Primark Manchester - Trafford Palazzo",
-      "meta_description": "Shop the latest trends at amazing prices at Primark Manchester. Adored by fashion fans and value seekers in Manchester alike, Primark is the destination store for this season’s must haves. Discover women’s, men’s and children’s fashions, as well as lingerie, beauty and homeware. With sustainable cotton and Primark PS cruelty free beauty ranges dropping on the regular, you can explore products that fit your budget and lifestyle. Visit your local Primark Manchester for amazing fashion at amazing prices.",
-      "meta_keywords": "primark, machester, uk",
-      "enable_search_indexing": true,
-      "seo_title": "Primark Manchester - Trafford Palazzo"
+      "meta_title": "Manchester - Trafford Palazzo",
+      "meta_description": "Find your Amazing at Primark Trafford Palazzo in Manchester. Browse opening hours, get directions and plan your trip to your local Primark today.",
+      "keywords": "primark, machester, uk",
+      "enable_search_indexing": true
     },
     "tags": [
       "store locator"
     ],
     "locale": "en-us",
-    "uid": "blt5c45963232eec722",
+    "uid": "blt9f0970b0e4f7d78b",
     "ACL": {},
-    "_version": 2,
+    "_version": 5,
     "_in_progress": false,
     "publish_details": [
       {
-        "environment": "bltece53a160d657025",
+        "environment": "blt39671fbd3ff90281",
         "locale": "en-us",
-        "time": "2023-08-01T22:27:21.292Z",
+        "time": "2023-09-08T04:14:38.433Z",
         "user": "blt4b67e1eb6412cbdf",
-        "version": 2
+        "version": 5
       },
       {
-        "environment": "blt99f345cbc32fca31",
+        "environment": "blt84c6b4b3741ea479",
         "locale": "en-us",
-        "time": "2023-08-01T22:27:21.292Z",
+        "time": "2023-09-08T04:14:38.438Z",
         "user": "blt4b67e1eb6412cbdf",
-        "version": 2
+        "version": 5
       },
       {
-        "environment": "bltb90dab96044a39e6",
+        "environment": "blte4b1e17306c23092",
         "locale": "en-us",
-        "time": "2023-08-01T22:27:21.292Z",
+        "time": "2023-09-08T04:14:38.443Z",
         "user": "blt4b67e1eb6412cbdf",
-        "version": 2
+        "version": 5
+      }
+    ]
+  },
+  "blt0c35e611289a5075": {
+    "title": "Boston, MA",
+    "url": "/store-locator/us/boston/10-summer-street",
+    "address": "10 Summer Street\nBoston 02110\nUnited States",
+    "primary_phone": "(617) 350-5232",
+    "coordinates": {
+      "latitude": "42.3555378",
+      "longitude": "-71.0626698"
+    },
+    "brand_color": "#effbff",
+    "blocks": [
+      {
+        "hours": {
+          "days": [
+            {
+              "day": "Every Day",
+              "_metadata": {
+                "uid": "csb57344a711c6a2d3"
+              },
+              "start_time": "10:00",
+              "end_time": "20:00"
+            }
+          ],
+          "_metadata": {
+            "uid": "csb9776e41a4e209fe"
+          },
+          "notice": ""
+        }
+      },
+      {
+        "facilities": {
+          "facilities": [
+            "Wheelchair Access",
+            "Offsite Parking Facilities"
+          ],
+          "_metadata": {
+            "uid": "csca4b509726529fe3"
+          }
+        }
+      },
+      {
+        "networks": {
+          "links": [
+            {
+              "title": "Google Maps",
+              "href": "https://goo.gl/maps/rcuw96EAvPPeJjDr9"
+            },
+            {
+              "title": "Instagram",
+              "href": "https://www.instagram.com/primark.usa/"
+            }
+          ],
+          "_metadata": {
+            "uid": "cs5a774ff43b3ddc71"
+          }
+        }
+      },
+      {
+        "about": {
+          "about": {
+            "uid": "b31b75a76b6d4f918df48cab42512678",
+            "type": "doc",
+            "attrs": {},
+            "children": [
+              {
+                "type": "p",
+                "uid": "cffb133008024c55863fdd3f2c876432",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "7a8ca9327f0b40ca844bf21ef46e62ad",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "Shop the latest trends at amazing prices at Primark "
+                      },
+                      {
+                        "text": "Boston",
+                        "bold": true
+                      },
+                      {
+                        "text": ". Adored by fashion fans and value seekers in Boston alike, Primark is the destination store for this season’s must haves. Discover women’s, men’s and children’s fashions, as well as lingerie, beauty and homeware."
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "uid": "3707103f200e4328b02c5f6ade3a3476",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "2d379496424b42cc82955a60ccbd7b4e",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "With sustainable cotton and Primark PS cruelty free beauty ranges dropping on the regular, you can explore products that fit your budget and lifestyle. Visit your local Primark Boston for amazing fashion at amazing prices."
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "_version": 3
+          },
+          "_metadata": {
+            "uid": "cs2cf5275bae157eb7"
+          }
+        }
+      }
+    ],
+    "seo": {
+      "meta_title": "Boston, MA",
+      "meta_description": "Visit your local Primark in Boston 10 Summer Street. Browse opening hours, get directions and plan your trip.",
+      "keywords": "primark, boston, ma, usa",
+      "enable_search_indexing": true
+    },
+    "tags": [
+      "store locator"
+    ],
+    "locale": "en-us",
+    "uid": "blt0c35e611289a5075",
+    "ACL": {},
+    "_version": 3,
+    "_in_progress": false,
+    "publish_details": [
+      {
+        "environment": "blt39671fbd3ff90281",
+        "locale": "en-us",
+        "time": "2023-09-08T04:14:16.369Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 3
+      },
+      {
+        "environment": "blt84c6b4b3741ea479",
+        "locale": "en-us",
+        "time": "2023-09-08T04:14:16.373Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 3
+      },
+      {
+        "environment": "blte4b1e17306c23092",
+        "locale": "en-us",
+        "time": "2023-09-08T04:14:16.376Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 3
+      }
+    ]
+  },
+  "blt138ac55b020ec29b": {
+    "title": "Oxford Street West",
+    "url": "/store-locator/gb/london/499-517-oxford-street",
+    "address": "499 - 517 Oxford Street\nLondon W1K 7DA\nUnited Kingdom",
+    "primary_phone": "020 7495 0420",
+    "coordinates": {
+      "latitude": "51.5134201",
+      "longitude": "-0.1940406"
+    },
+    "brand_color": "#effbff",
+    "blocks": [
+      {
+        "hours": {
+          "days": [
+            {
+              "day": "Mon-Sat",
+              "_metadata": {
+                "uid": "csb0a629ee2707b6ee"
+              },
+              "start_time": "08:00",
+              "end_time": "22:00"
+            },
+            {
+              "day": "Sun",
+              "_metadata": {
+                "uid": "cs95d6b288aaaf3c46"
+              },
+              "start_time": "12:00",
+              "end_time": "18:00"
+            }
+          ],
+          "_metadata": {
+            "uid": "csc08bd1ef77b5a3fe"
+          },
+          "notice": "*Due to Sunday Trading Laws the store will be open from 11:30 AM -12:00 PM for browsing only."
+        }
+      },
+      {
+        "facilities": {
+          "facilities": [
+            "Click And Collect",
+            "Parking",
+            "Pre-Loved Clothing Recycle Box",
+            "Wheelchair Access"
+          ],
+          "_metadata": {
+            "uid": "cs630d691ab850d11c"
+          }
+        }
+      },
+      {
+        "networks": {
+          "links": [
+            {
+              "title": "Google Maps",
+              "href": "https://goo.gl/maps/PdwQg4CX6puTLyob6"
+            },
+            {
+              "title": "Instagram",
+              "href": "https://www.instagram.com/Primark/"
+            }
+          ],
+          "_metadata": {
+            "uid": "csce94adf2e766a19c"
+          }
+        }
+      },
+      {
+        "about": {
+          "about": {
+            "uid": "ceb39ea1a99d4d32b073459bf99c0dd1",
+            "type": "doc",
+            "attrs": {},
+            "children": [
+              {
+                "type": "p",
+                "uid": "b052eec62a3a492393951120c5ac3188",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "998cc45ce9734932a868cd5931608809",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "Looking for a clothes shop near "
+                      },
+                      {
+                        "text": "Marble Arch",
+                        "bold": true
+                      },
+                      {
+                        "text": " for this season’s must-haves? We’ve got you covered! Whether you’re local to our Oxford Street West store, or coming to visit after a day of fun around Hyde Park, you can shop the latest trends at amazing prices at Primark Oxford Street West. Adored by fashion fans and value seekers in London alike, Primark is the destination store!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "uid": "8b84d46ea8874856a28c90a0f0c6cfb7",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "8433c4946e66499ca20cbf9df5352b2a",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "Discover our range of women’s clothing near Marble Arch, men’s clothing and kids’ fashion, as well as lingerie, beauty and homeware. With sustainable cotton and Primark PS cruelty-free beauty ranges dropping on the regular, you can explore products that fit your budget and lifestyle. But that’s not all!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "uid": "8c475be95d0c403c9577ad5d3f0acc6f",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "78d24990d8e34556aceabb28e5499af2",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "We've got everything you need for your little ones to start their new term in style. Looking for a school uniform shop in Oxford Street West? Our store is the perfect place to get those everyday clothing essentials, as well as school supplies for serious note-taking! To hold all those school must-haves, check out our Disney school bags for a cute twist on the typical school backpack style."
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "uid": "8b219bf669e345f3a43c8c1b850194a4",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "fc01b593126e4a1fb47139bcb51c7ea9",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "Need to get your hands on a pair of kids’ school shoes near Hyde Park before the first day of term? Our range will keep little feet comfortable all day long. So if you’re shopping in and around Oxford Street West, visit your local Primark for amazing fashion at amazing prices!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "_version": 6
+          },
+          "_metadata": {
+            "uid": "cse65a734ddeaf3fb8"
+          }
+        }
+      }
+    ],
+    "seo": {
+      "meta_title": "Oxford Street West",
+      "meta_description": "Find your Amazing at Primark 499 - 517 Oxford Street in London: Check our opening times and pick up your shopping in store with our new Primark Click & Collect.",
+      "keywords": "primark, london, uk",
+      "enable_search_indexing": true
+    },
+    "tags": [
+      "store locator"
+    ],
+    "locale": "en-us",
+    "uid": "blt138ac55b020ec29b",
+    "ACL": {},
+    "_version": 6,
+    "_in_progress": false,
+    "publish_details": [
+      {
+        "environment": "blt39671fbd3ff90281",
+        "locale": "en-us",
+        "time": "2023-09-08T04:13:55.022Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 6
+      },
+      {
+        "environment": "blt84c6b4b3741ea479",
+        "locale": "en-us",
+        "time": "2023-09-08T04:13:55.027Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 6
+      },
+      {
+        "environment": "blte4b1e17306c23092",
+        "locale": "en-us",
+        "time": "2023-09-08T04:13:55.030Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 6
+      }
+    ]
+  },
+  "blt2cf3dfe8e515cb43": {
+    "title": "Oxford Street East",
+    "url": "/store-locator/gb/london/14-28-oxford-street",
+    "address": "14-28 Oxford Street, Fitzrovia\nLondon W1D 1AU\nUnited Kingdom",
+    "primary_phone": "020 7580 5510",
+    "coordinates": {
+      "latitude": "51.5165345",
+      "longitude": "-0.1311875"
+    },
+    "brand_color": "#effbff",
+    "blocks": [
+      {
+        "hours": {
+          "days": [
+            {
+              "day": "Mon-Sat",
+              "_metadata": {
+                "uid": "cs4252b29773fa688d"
+              },
+              "start_time": "08:00",
+              "end_time": "22:00"
+            },
+            {
+              "day": "Sun",
+              "_metadata": {
+                "uid": "csbd99c8953081a660"
+              },
+              "start_time": "11:30",
+              "end_time": "18:00"
+            }
+          ],
+          "_metadata": {
+            "uid": "csa9edc1428743f22f"
+          },
+          "notice": "*Due to Sunday trading laws the store will be open from 11.30 – 12.00 for browsing only."
+        }
+      },
+      {
+        "facilities": {
+          "facilities": [
+            "Beauty Studio",
+            "Parking",
+            "Pre-Loved Clothing Recycle Box",
+            "Wheelchair Access",
+            "Wornwell",
+            "Tasty By Greggs Eat In And Take Out"
+          ],
+          "_metadata": {
+            "uid": "csbec661cad37b0477"
+          }
+        }
+      },
+      {
+        "networks": {
+          "links": [
+            {
+              "title": "Google Maps",
+              "href": "https://goo.gl/maps/BDwwqKZ8eMBhZget6"
+            },
+            {
+              "title": "Instagram",
+              "href": "https://www.instagram.com/Primark/"
+            }
+          ],
+          "_metadata": {
+            "uid": "cs96ec0d436d4f371f"
+          }
+        }
+      },
+      {
+        "about": {
+          "about": {
+            "uid": "250e87e3058c43e0ac5413d827924093",
+            "type": "doc",
+            "attrs": {},
+            "children": [
+              {
+                "type": "p",
+                "uid": "b62aa361ea76488d85551d43f11abd06",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "5a531f6a2ab6405dbf9a9dd31c7f7d86",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "Looking for a clothes shop near "
+                      },
+                      {
+                        "text": "Tottenham Court Road",
+                        "bold": true
+                      },
+                      {
+                        "text": " for this season’s must-haves? We’ve got you covered! Whether you’re local to our Oxford Street East store, or visiting after a trip to Covent Garden and Oxford Circus, you can shop the latest trends at amazing prices at Primark Oxford Street East. "
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "b4bf7e788a3243e9ae930fe79d3b1160",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "Adored by fashion fans and value seekers in London alike, Primark is the destination store!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "uid": "5ec85ceb66ea4953af715df30da2916f",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "f38a84b60db0487b9a688e6f17f3c10d",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "Discover our range of women’s clothing near Tottenham Court Road, men’s clothing and kids’ fashion, as well as lingerie, beauty and homeware. With sustainable cotton and Primark PS cruelty-free beauty ranges dropping on the regular, you can explore products that fit your budget and lifestyle. But that’s not all!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "uid": "26885e58543d4779889bc446e100b3c3",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "dd55d0685a9a4f0891a49eee96e3c911",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "We've got everything you need for your little ones to start their new term in style. Looking for a school uniform shop in Oxford Street East? Our store is the perfect place to get those everyday clothing essentials, as well as school supplies for serious note-taking!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "uid": "48eef23f5de843cb917875bc2d6e74f4",
+                "attrs": {
+                  "style": {},
+                  "redactor-attributes": {},
+                  "dir": "ltr"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "uid": "a97b7e7f2611401f9c4000c11034bcfb",
+                    "type": "span",
+                    "attrs": {
+                      "style": {},
+                      "redactor-attributes": {},
+                      "dir": "ltr"
+                    },
+                    "children": [
+                      {
+                        "text": "To hold all those school must-haves, check out our Disney school bags for a cute twist on the typical school backpack style. Need to get your hands on a pair of kids’ school shoes near Oxford Circus before the first day of term? Our range will keep little feet comfortable all day long. So if you’re shopping in and around Oxford Street East, visit your local Primark for amazing fashion at amazing prices!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "_version": 6
+          },
+          "_metadata": {
+            "uid": "cs81cc8061d25af34e"
+          }
+        }
+      }
+    ],
+    "seo": {
+      "meta_title": "Oxford Street East",
+      "meta_description": "Find your Amazing at Primark 14-28 Oxford Street in London. Check our opening times and pick up your shopping in store with our new Primark Click & Collect.",
+      "keywords": "primark, london, uk",
+      "enable_search_indexing": true
+    },
+    "tags": [
+      "store locator"
+    ],
+    "locale": "en-us",
+    "uid": "blt2cf3dfe8e515cb43",
+    "ACL": {},
+    "_version": 6,
+    "_in_progress": false,
+    "publish_details": [
+      {
+        "environment": "blt39671fbd3ff90281",
+        "locale": "en-us",
+        "time": "2023-09-08T04:13:23.251Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 6
+      },
+      {
+        "environment": "blt84c6b4b3741ea479",
+        "locale": "en-us",
+        "time": "2023-09-08T04:13:23.254Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 6
+      },
+      {
+        "environment": "blte4b1e17306c23092",
+        "locale": "en-us",
+        "time": "2023-09-08T04:13:23.258Z",
+        "user": "blt4b67e1eb6412cbdf",
+        "version": 6
       }
     ]
   }
