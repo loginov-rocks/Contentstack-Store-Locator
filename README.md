@@ -1,6 +1,6 @@
 # Contentstack Store Locator
 
-Boilerplate Store Locator implementation for Contentstack based on Next.js and Google APIs.
+Boilerplate Store Locator implementation for Contentstack based on Next.js and Google APIs: [screenshots](https://github.com/loginov-rocks/Contentstack-Store-Locator/blob/main/docs/Screenshots.md).
 
 [Primark Store Locator](https://www.primark.com/en-gb/stores) taken as demonstration example, no affiliation.
 
