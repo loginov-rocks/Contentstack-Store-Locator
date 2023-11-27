@@ -11,6 +11,8 @@ import { StoreDetailNearbyStoresList } from '@/storeLocator/components/StoreDeta
 import { Store } from '@/storeLocator/interfaces';
 import { filterStoresByDistance } from '@/storeLocator/utils/filterStoresByDistance';
 
+import styles from './styles.module.css';
+
 interface Props {
   entry: StoreDetailPageEntry;
   nearbyStores: Store[];
@@ -39,10 +41,18 @@ export default function StoreDetailPage({ entry, nearbyStores }: Props) {
           </li>
         </ul>
       </nav>
-      <StoreDetailHero storeDetailPageEntry={entry} />
-      <Map markers={markers} />
-      <StoreDetailBlocks storeDetailPageEntryBlocks={entry.blocks} />
-      <StoreDetailNearbyStoresList stores={nearbyStores} />
+      <div className={styles.container}>
+        <div className={styles.left}>
+          <StoreDetailHero storeDetailPageEntry={entry} />
+        </div>
+        <div className={styles.right}>
+          <Map markers={markers} />
+        </div>
+        <div className={styles.bottom}>
+          <StoreDetailBlocks storeDetailPageEntryBlocks={entry.blocks} />
+          <StoreDetailNearbyStoresList stores={nearbyStores} />
+        </div>
+      </div>
     </>
   );
 };

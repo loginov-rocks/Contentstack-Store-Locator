@@ -1,0 +1,24 @@
+.container {
+  border: 1px solid silver;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px;
+}
+
+.left {
+  display: flex;
+  width: 50%;
+}
+
+.left>div {
+  padding: 24px;
+  width: 100%;
+}
+
+.right {
+  width: 50%;
+}
+
+.bottom {
+  padding: 24px;
+}

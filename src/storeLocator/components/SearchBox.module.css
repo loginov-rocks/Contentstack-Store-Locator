@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+}
+
+.list {
+  background: #fff;
+  border: 1px solid silver;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  margin: 0;
+  position: absolute;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.item:hover {
+  text-decoration: underline;
+}

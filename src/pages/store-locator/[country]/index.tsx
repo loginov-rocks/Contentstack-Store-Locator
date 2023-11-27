@@ -11,6 +11,8 @@ import { Seo } from '@/storeLocator/components/Seo';
 import { StoresList } from '@/storeLocator/components/StoresList';
 import { searchStores, SearchStoresResponse } from '@/storeLocator/apiClient';
 
+import styles from './styles.module.css';
+
 interface Props {
   entry: StoreCountryPageEntry;
 }
@@ -84,12 +86,18 @@ export default function StoreContryPage({ entry }: Props) {
           </li>
         </ul>
       </nav>
-      <h1>{entry.title}</h1>
-      {isMapLoaded && (
-        <SearchBox countryCode={entry.country_code} onClear={handleClear} onSelect={handleSelect} />
-      )}
-      {searchStoresResponse === null ? <LocalitiesList storeLocalityPageEntries={entry.localities} /> : renderSearchStores()}
-      <Map markers={markers} onLoad={() => setIsMapLoaded(true)} />
+      <div className={styles.container}>
+        <div className={styles.left}>
+          <h1>{entry.title}</h1>
+          {isMapLoaded && (
+            <SearchBox countryCode={entry.country_code} onClear={handleClear} onSelect={handleSelect} />
+          )}
+          {searchStoresResponse === null ? <LocalitiesList storeLocalityPageEntries={entry.localities} /> : renderSearchStores()}
+        </div>
+        <div className={styles.right}>
+          <Map markers={markers} onLoad={() => setIsMapLoaded(true)} />
+        </div>
+      </div>
     </>
   );
 };

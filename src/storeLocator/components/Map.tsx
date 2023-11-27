@@ -59,7 +59,7 @@ export const Map = ({ markers, onLoad }: Props) => {
 
   return (
     <GoogleMap
-      mapContainerStyle={{ width: '100%', height: '600px' }}
+      mapContainerStyle={{ width: '100%', height: '384px' }}
       mapTypeId={window.google.maps.MapTypeId.ROADMAP}
       onLoad={handleLoad}
       onUnmount={handleUnmount}

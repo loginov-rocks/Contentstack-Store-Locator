@@ -6,6 +6,8 @@ import { StoreHomePageEntry, queryStoreHomePageEntry } from '@/contentstack/stor
 import { CountriesList } from '@/storeLocator/components/CountriesList';
 import { Seo } from '@/storeLocator/components/Seo';
 
+import styles from './styles.module.css';
+
 interface Props {
   entry: StoreHomePageEntry;
 }
@@ -23,8 +25,10 @@ export default function StoreHomePage({ entry }: Props) {
           </li>
         </ul>
       </nav>
-      <h1>{entry.title}</h1>
-      <CountriesList storeCountryPageEntries={entry.countries} />
+      <div className={styles.container}>
+        <h1>{entry.title}</h1>
+        <CountriesList storeCountryPageEntries={entry.countries} />
+      </div>
     </>
   );
 };

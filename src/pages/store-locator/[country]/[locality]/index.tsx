@@ -7,6 +7,8 @@ import { Map } from '@/storeLocator/components/Map';
 import { Seo } from '@/storeLocator/components/Seo';
 import { StoresList } from '@/storeLocator/components/StoresList';
 
+import styles from './styles.module.css';
+
 interface Props {
   entry: StoreLocalityPageEntry;
 }
@@ -35,9 +37,15 @@ export default function StoreLocalityPage({ entry }: Props) {
           </li>
         </ul>
       </nav>
-      <h1>{entry.title}</h1>
-      <StoresList stores={entry.stores} />
-      <Map markers={markers} />
+      <div className={styles.container}>
+        <div className={styles.left}>
+          <h1>{entry.title}</h1>
+          <StoresList stores={entry.stores} />
+        </div>
+        <div className={styles.right}>
+          <Map markers={markers} />
+        </div>
+      </div>
     </>
   );
 };

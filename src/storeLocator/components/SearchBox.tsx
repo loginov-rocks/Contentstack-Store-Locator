@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import usePlacesAutocomplete, { getGeocode, getLatLng } from 'use-places-autocomplete';
 
+import styles from './SearchBox.module.css';
+
 interface Props {
   countryCode: string;
   onClear: () => void;
@@ -46,7 +48,7 @@ export const SearchBox = ({ countryCode, onClear, onSelect }: Props) => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <input
         disabled={!ready}
         onChange={handleInput}
@@ -57,7 +59,7 @@ export const SearchBox = ({ countryCode, onClear, onSelect }: Props) => {
         <input onClick={handleClear} value='Clear' type='button' />
       )}
       {status === 'OK' && (
-        <ul>
+        <ul className={styles.list}>
           {data.map((suggestion) => {
             const {
               description,
@@ -66,7 +68,7 @@ export const SearchBox = ({ countryCode, onClear, onSelect }: Props) => {
             } = suggestion;
 
             return (
-              <li key={place_id} onClick={handleSelect(description)}>
+              <li className={styles.item} key={place_id} onClick={handleSelect(description)}>
                 <strong>{main_text}</strong> <small>{secondary_text}</small>
               </li>
             );
